@@ -32,7 +32,6 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 					
 					<Footer />
 				</main>
-				<script src="./node_modules/preline/dist/preline.js"></script>
 			</body>
 		</html>
 	);
