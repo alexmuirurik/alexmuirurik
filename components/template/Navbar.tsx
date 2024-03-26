@@ -25,7 +25,7 @@ const Navbar = () => {
         <nav className='sticky w-full top-0 bg-platinum-light dark:bg-rich-black z-30 lg:z-50'>
             <div className="container-fluid inline-flex px-2">
                 <div className="header-img">
-                    <Image className='mt-2' src='/img/hhjf.webp' width={40} height={40} alt='' />
+                    <Image className='mt-2' src='/img/home/hhjf.webp' width={40} height={40} alt='' />
                 </div>
                 <div className="nav-items overflow-hidden hidden sm:block">
                     <ul className="menu menu-horizontal flex-nowrap"> 

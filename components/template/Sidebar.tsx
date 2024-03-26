@@ -19,7 +19,7 @@ const Sidebar = () => {
             <div className="sidebar bg-platinum-light dark:bg-rich-black rounded-md w-44 py-0 h-svh z-50">
                 <div className='sidebar-header'>
                     <div className="sidebar-header flex flex-col content-center items-center py-4">
-                        <Image className='border-8 border-ghost-white dark:border-gun-metal rounded-full' src="/img/alexmuiruri.jpg" alt='' height={120} width={120} />
+                        <Image className='border-8 border-ghost-white dark:border-gun-metal rounded-full' src="/img/home/alexmuiruri.jpg" alt='' height={120} width={120} />
                         <h1 className={pacifico.className + " mt-3 text-2xl font-[bold_!important]"}>Alex Muiruri</h1>
                         <h4 className="text-[cadetblue] text-xs mt-0.5 font-bold">Full-Stack Web Developer</h4>
                         <div className="social-links flex gap-3 mt-4">

@@ -4,7 +4,7 @@ import React from 'react'
 const Hero = () => {
     return (
         <section className="hero items-start p-0 xl:items-center relative h-[90svh] md:h-[70svh] dark:bg-[#2c363f] bg-[#cec6bd] z-10 border dark:border-gray-700 rounded-b-md overflow-hidden" 
-            style={{backgroundImage: "url(/img/home.png)"}} id="hero">
+            style={{backgroundImage: "url(/img/home/home.png)"}} id="hero">
             <div className="container p-8 mb-8">
                 <div className="">
                     <div className="sm:w-3/4 md:w-3/5">

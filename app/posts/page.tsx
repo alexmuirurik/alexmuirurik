@@ -1,6 +1,6 @@
+import React from 'react'
 import PostCard from '@/components/card/PostCard'
 import PageHero from '@/components/template/PageHero'
-import React from 'react'
 
 const page = () => {
 	return (
@@ -8,12 +8,7 @@ const page = () => {
 			<PageHero pagename='Blog Posts' />
 			<section className="dportfolio py-2 px-0 bg-transparent rounded-3">
 				<div className="container-fluid md:p-0">
-					<div className="relative columns-1 sm:columns-2 lg:columns-3 gap-4 m-auto">
-						<PostCard />
-						<PostCard />
-						<PostCard />
-						<PostCard />
-						<PostCard />
+					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-stretch m-auto">
 						<PostCard />
 					</div>
 					<div className="join flex justify-center mt-8">

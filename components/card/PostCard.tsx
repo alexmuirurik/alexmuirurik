@@ -1,19 +1,21 @@
-import Image from 'next/image'
 import React from 'react'
+import posts from './../../records/posts.json'
+import Link from 'next/link'
+import ImageToast from '../toast/ImageToast'
+import { truncate } from '@/db/helpers'
 
 const PostCard = () => {
-    return (
-        <div className="relative aspect-w-16 aspect-h-9 bg-transparent mb-4">
+    return posts.map(post => 
+        <div className="relative aspect-w-16 aspect-h-9 bg-transparent mb-4 basis-1/2" key={post.id}>
             <div className="card card-compact border dark:border-gray-700 rounded-md shadow-xl overflow-hidden">
                 <figure className='max-w-full'>
-                    <Image src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" fill className='!relative'/>
+                    <ImageToast image={post.featured_media} />
                 </figure>
-                <div className="card-body bg-ghost-white dark:bg-card-dark">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    {/* <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
-                    </div> */}
+                <div className="card-body bg-ghost-white dark:bg-card-dark" >
+                    <h2 className="card-title"><Link href={'/posts/'+post.slug}>{post.title.rendered} </Link></h2>
+                    <div className="content" dangerouslySetInnerHTML={{__html: truncate(post.excerpt.rendered ) }}>
+
+                    </div>
                 </div>
             </div> 
         </div>

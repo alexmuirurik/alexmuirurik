@@ -1,6 +1,6 @@
-import PortfolioCard from '@/components/card/PortfolioCard'
-import PageHero from '@/components/template/PageHero'
 import React from 'react'
+import PageHero from '@/components/template/PageHero'
+import PortfolioCard from '@/components/card/PortfolioCard'
 
 const page = () => {
 	return (
@@ -8,14 +8,7 @@ const page = () => {
 			<PageHero pagename='Portfolio' />
 			<section className="dportfolio py-2 px-0 bg-transparent rounded-3">
 				<div className="container-fluid md:p-0">
-					<div className="relative columns-1 sm:columns-2 lg:columns-3 gap-4 m-auto">
-						<PortfolioCard />
-						<PortfolioCard />
-						<PortfolioCard />
-						<PortfolioCard />
-						<PortfolioCard />
-						<PortfolioCard />
-						<PortfolioCard />
+					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-auto">
 						<PortfolioCard />
 					</div>
 					<div className="join flex justify-center mt-8">

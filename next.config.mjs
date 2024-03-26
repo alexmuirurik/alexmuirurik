@@ -4,9 +4,9 @@ const nextConfig = {
 		remotePatterns: [
 			{
 				protocol: 'https',
-				hostname: 'daisyui.com',
+				hostname: 'alexmuiruri.com',
 				port: '',
-				pathname: '/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg',
+				pathname: '**',
 			},
 		],
 	},
