@@ -1,6 +1,7 @@
 import React from 'react'
 import * as posts from './../../../records/posts.json'
 import SinglePostCard from '@/components/card/SinglePostCard'
+import PostCard from '@/components/card/PostCard'
 
 const page = ({params}: {params: {slug: string}}) => {
 	const post = posts.find(post => post.slug === params.slug)
@@ -9,7 +10,7 @@ const page = ({params}: {params: {slug: string}}) => {
 			<div className="col md:w-9/12 px-0">
 				{ (post) && <SinglePostCard post={post} />}
 				<div className="comment content mt-4 rounded-3">
-					<div className="content-comment">
+					<div className="content-comment ">
 						<div className="col-lg-12">
 							<div className="mt-5">
 							</div>
@@ -19,10 +20,11 @@ const page = ({params}: {params: {slug: string}}) => {
 
 						</div>
 					</div>
-					<div className="col md:w-3/12">
-
-					</div>
+					
 				</div>
+			</div>
+			<div className="col md:w-3/12">
+				<PostCard />
 			</div>
 		</div>
 	)

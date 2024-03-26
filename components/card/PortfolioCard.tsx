@@ -13,7 +13,7 @@ const PortfolioCard = () => {
                 </figure>
                 <div className="card-body ease-in-out duration-600 cursor-pointer">
                     <h2 className="card-title text-white">{portfolio.title}</h2> 
-                    <p>{portfolio.description}</p>
+                    <p className='text-white text-md'>{portfolio.description}</p>
                     <div className="card-actions justify-end">
                         <Link className="btn btn-primary" href={portfolio.demo} target='_blank'>View Demo</Link>
                     </div>
