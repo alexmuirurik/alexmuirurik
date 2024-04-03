@@ -7,10 +7,9 @@ const About = () => {
             <div className="">
                 <div className="md:flex md:column-2 gap-4">
                     <div className="bg-ghost-white dark:bg-card-dark w-full md:w-8/12 lg:w-9/12 rounded-md p-6 mb-4 md:mb-0">
-                        <h2 className="card-title ">About Me</h2>
-                        <p className="section-description text-sm">Learn More About me</p>
+                        <h2 className="card-title">About Me</h2>
                         <div className="card">
-                            <div className="card-body p-0 pt-8">
+                            <div className="card-body p-0 ">
                                 <p> Thanks for visiting my resume website. I&apos;d be glad if you hit that &apos;Contact Me&apos; button
                                     above and tell me more about yourself. </p>
                                 <p>Hi there,</p>
@@ -40,7 +39,7 @@ const About = () => {
                                     </div>
                                     <div className="flex border-t dark:border-gray-700 pt-4">
                                         <div className="side w-1/6">
-                                            <Image src="/img/laravel.png" alt="" height={30} width={30}/>
+                                            <Image src="/img/home/laravel.png" alt="" height={30} width={30}/>
                                         </div>
                                         <div className="aside">
                                             <h3>Simple Laravel Blog</h3>
@@ -49,7 +48,7 @@ const About = () => {
                                     </div>
                                     <div className="flex border-t dark:border-gray-700 pt-4">
                                         <div className="side w-1/6">
-                                            <Image src="/img/laravel.png" alt="" height={30} width={30}/>
+                                            <Image src="/img/home/postgresql.png" alt="" height={30} width={30}/>
                                         </div>
                                         <div className="aside">
                                             <h3><a href="https://demo.alexmuiruri.com" target="_blank">Writers Management System</a></h3>
@@ -58,7 +57,7 @@ const About = () => {
                                     </div>
                                     <div className="flex border-y dark:border-gray-700 pt-4">
                                         <div className="side w-1/6">
-                                            <Image src="/img/laravel.png" alt="" height={30} width={30}/>
+                                            <Image src="/img/home/laravel.png" alt="" height={30} width={30}/>
                                         </div>
                                         <div className="aside">
                                             <h3>Chama Management Website</h3>

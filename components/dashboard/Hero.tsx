@@ -1,7 +1,14 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Hero = () => {
+    const date = new Date
+    const experience = {
+        writing : date.getFullYear() - 2018, 
+        coding  : date.getFullYear() - 2020
+    }
+    
     return (
         <section className="hero items-start p-0 xl:items-center relative h-[90svh] md:h-[70svh] dark:bg-[#2c363f] bg-[#cec6bd] z-10 border dark:border-gray-700 rounded-b-md overflow-hidden" 
             style={{backgroundImage: "url(/img/home/home.png)"}} id="hero">
@@ -11,13 +18,13 @@ const Hero = () => {
                         <h5 className='text-xl md:text-2xl font-extrabold'>Hi there, </h5>
                         <h3 className='text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-bold'>I&apos;m <span className='text-success'>Alex Muiruri</span></h3>
                         <h5 className="text-xl md:text-2xl font-semibold">A <span className=''>Full Stack Web Developer</span></h5>
-                        <p className='mt-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis asperiores error labore a ea officiis harum quia architecto, 
-                            repellendus doloremque nam amet reprehenderit cupiditate. Esse eum dolores veritatis sed odit.</p>
+                        <p className='mt-5'>I have {experience.writing} years of freelance tech and casino writing experience, plus {experience.coding} years of coding 
+                        experience. I'm here to help you design dashboard platforms using NodeJS, NextJS, and Laravel and craft engaging content for your website.</p>
 
                     </div>
                     <div className="btns flex justify-between mt-8 sm:w-3/4 md:w-2/5">
-                        <button type="button" className='btn btn-sm btn-success'>Contact Me</button> 
-                        <button type="button" className="btn btn-sm btn-primary">Download CV</button>
+                        <Link className='btn btn-sm btn-success' href='/portfolio'>View My Portfolio</Link> 
+                        <Link className="btn btn-sm btn-primary" href='/assets/doc/Resume-Alex-Muiruri-1.pdf' target='_blank'>Download CV</Link>
                     </div>
                 </div>
             </div>
