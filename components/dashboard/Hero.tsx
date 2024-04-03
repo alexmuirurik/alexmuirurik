@@ -19,7 +19,7 @@ const Hero = () => {
                         <h3 className='text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-bold'>I&apos;m <span className='text-success'>Alex Muiruri</span></h3>
                         <h5 className="text-xl md:text-2xl font-semibold">A <span className=''>Full Stack Web Developer</span></h5>
                         <p className='mt-5'>I have {experience.writing} years of freelance tech and casino writing experience, plus {experience.coding} years of coding 
-                        experience. I'm here to help you design dashboard platforms using NodeJS, NextJS, and Laravel and craft engaging content for your website.</p>
+                        experience. I&apos;m here to help you design dashboard platforms using NodeJS, NextJS, and Laravel and craft engaging content for your website.</p>
 
                     </div>
                     <div className="btns flex justify-between mt-8 sm:w-3/4 md:w-2/5">
