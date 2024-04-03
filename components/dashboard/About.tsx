@@ -30,7 +30,7 @@ const About = () => {
                                 <div className="list-group ">
                                     <div className="flex border-t dark:border-gray-700 pt-4">
                                         <div className="side w-1/6">
-                                            <Image src="/img/react.png" alt="" height={30} width={30} />
+                                            <Image src="/img/home/react.png" alt="" height={30} width={30} />
                                         </div>
                                         <div className="aside">
                                             <h3><a href="https://netfleas.alexmuiruri.com" target="_blank">React Movie Site</a></h3>
