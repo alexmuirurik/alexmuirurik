@@ -18,7 +18,7 @@ const About = () => {
                                     web development, cloud hosting, and investment companies and developing admin dashboards for SMBs. 
                                 </p>
                                 <p>
-                                    Do you have a Figma file you&apos;d like me to use? No. It&apos;s okay. We can design the entire system from scratch. I can create Laravel, React, NextJS, and Python 
+                                    Do you have a Figma file you&apos;d like me to use? No? It&apos;s okay. We can design the entire system from scratch. I can create Laravel, React, NextJS, and Python 
                                     applications with basic to complex functionalities. 
                                 </p>
                                 <p>
