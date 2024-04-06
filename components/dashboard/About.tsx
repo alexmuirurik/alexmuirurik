@@ -10,15 +10,24 @@ const About = () => {
                         <h2 className="card-title">About Me</h2>
                         <div className="card">
                             <div className="card-body p-0 ">
-                                <p> Thanks for visiting my resume website. I&apos;d be glad if you hit that &apos;Contact Me&apos; button
-                                    above and tell me more about yourself. </p>
+                                <p> 
+                                    Thanks for visiting my resume website. I&apos;d be glad if you hit that &apos;Contact Me&apos; button above and tell me more about yourself. 
+                                </p>
                                 <p>Hi there,</p>
-                                <p>I&apos;m a tech writer and Laravel Developer with over 5 years of experience. I specialize in creating
-                                    curated content for fintech, cyber security, web development, cloud hosting, and investment companies.</p>
-                                <p>I can help you connect with customers, increase brand awareness, and improve your search
-                                    engine ranking with high-quality content. Contact me at content@alexmuiruri.com for long and
-                                    short-form copy, blog posts, feature articles, and email copy.</p>
-                                <p>If you&apos;re scrolling through website, you can just read one of my samples below and tell me what you think. Your views are important to me. Thanks.</p>
+                                <p>I&apos;m a tech writer and full-stack web developer with over 5 years of experience. I specialize in creating curated content for fintech, cyber security, 
+                                    web development, cloud hosting, and investment companies and developing admin dashboards for SMBs. 
+                                </p>
+                                <p>
+                                    Do you have a Figma file you&apos;d like me to use? No. It&apos;s okay. We can design the entire system from scratch. I can create Laravel, React, NextJS, and Python 
+                                    applications with basic to complex functionalities. 
+                                </p>
+                                <p>
+                                    I can also help you connect with customers, increase brand awareness, and improve your search engine ranking with high-quality content. Contact me at content@alexmuiruri.com 
+                                    for long and short-form copy, blog posts, feature articles, and custom web designs.
+                                </p>
+                                <p>
+                                    If you&apos;re just scrolling through my website, read one of my sample articles below and tell me what you think. Your views are important to me. Thanks.
+                                </p>
                             </div>
                         </div>
                     </div>

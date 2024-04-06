@@ -23,13 +23,13 @@ const Sidebar = () => {
                         <h1 className={pacifico.className + " mt-3 text-2xl font-[bold_!important]"}>Alex Muiruri</h1>
                         <h4 className="text-[cadetblue] text-xs mt-0.5 font-bold">Full-Stack Web Developer</h4>
                         <div className="social-links flex gap-3 mt-4">
-                            <Link href="https://web.facebook.com" target='_blank' className='inline-block bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs'>
+                            <Link href="https://www.facebook.com/alexxmuiruri/" target='_blank' className='inline-block bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs'>
                                 <FontAwesomeIcon icon={faFacebookF} className='' />
                             </Link>
-                            <Link href="https://linkedin.com" target='_blank' className='inline-block bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs'>
+                            <Link href="https://www.linkedin.com/in/alex-muiruri-writer/" target='_blank' className='inline-block bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs'>
                                 <FontAwesomeIcon icon={faLinkedinIn} className='' />
                             </Link>
-                            <Link href="https://x.com" target='_blank' className='inline-block bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs'>
+                            <Link href="https://github.com/alexmuirurik?tab=overview&from=2023-12-01&to=2023-12-31" target='_blank' className='inline-block bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs'>
                                 <FontAwesomeIcon icon={faGithub} className='' />
                             </Link>
                         </div>
