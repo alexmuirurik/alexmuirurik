@@ -1,14 +1,16 @@
 import React from 'react'
-import * as posts from './../../../records/posts.json'
 import SinglePostCard from '@/components/card/SinglePostCard'
 import PostCard from '@/components/card/PostCard'
+import { singlepost } from '@/utils/posts'
 
-const page = ({params}: {params: {slug: string}}) => {
-	const post = posts.find(post => post.slug === params.slug)
+const page = async ({params}: {params: {slug: string}}) => {
+	const req	= await singlepost(params.slug)
+	const post	= await req.json()
+	console.log(post[0])
 	return (
 		<div className="row mx-0 my-2">
 			<div className="col md:w-9/12 px-0">
-				{ (post) && <SinglePostCard post={post} />}
+				{ (post[0]) && <SinglePostCard post={post[0]} />}
 				<div className="comment content mt-4 rounded-3">
 					<div className="content-comment ">
 						<div className="col-lg-12">

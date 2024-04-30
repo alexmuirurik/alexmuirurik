@@ -1,22 +1,24 @@
 import React from 'react'
 import PageHero from '@/components/template/PageHero'
 import PortfolioCard from '@/components/card/PortfolioCard'
+import { wpPortfolio } from '@/utils/portfolio'
+import Link from 'next/link'
+import Pagination from '@/components/card/Pagination'
 
-const page = () => {
+const page = async ( {searchParams}: {searchParams?: { [key: string]: string | string[] | undefined } }) => {
+	const pgs = (searchParams?.page) ? Number(searchParams?.page) : 1 
+	const req = await wpPortfolio(pgs)
+	const hdr = req.headers
 	return (
 		<div className="main-wrapper min-h-svh">
 			<PageHero pagename='Portfolio' />
 			<section className="dportfolio py-2 px-0 bg-transparent rounded-3">
 				<div className="container-fluid md:p-0">
 					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-auto">
-						<PortfolioCard />
+						<PortfolioCard page={pgs} />
 					</div>
 					<div className="join flex justify-center mt-8">
-						<button className="join-item btn">1</button>
-						<button className="join-item btn">2</button>
-						<button className="join-item btn btn-disabled">...</button>
-						<button className="join-item btn">99</button>
-						<button className="join-item btn">100</button>
+						<Pagination hdr={hdr} />
 					</div>
 				</div>
 			</section>
