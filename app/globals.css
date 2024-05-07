@@ -60,7 +60,7 @@
     }
 
     .row{
-        @apply flex flex-wrap mx-4 mt-4
+        @apply block lg:flex flex-wrap mt-4
     }
 
     .row > *{

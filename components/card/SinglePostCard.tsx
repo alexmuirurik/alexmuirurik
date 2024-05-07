@@ -5,7 +5,7 @@ const SinglePostCard = ({post}:any) => {
     return (
         <div className="entry-content bg-black rounded-md pb-3">
             <div className="post-image rounded-md overflow-hidden">
-                <ImageToast image={post.featured_media} />
+                <ImageToast image={post.featured_media} classList='w-full' />
             </div>
             <div className="content-wrapper rounded-md bg-ghost-white dark:bg-card-dark mx-3 px-3">
                 <div className="my-2 py-8 ">

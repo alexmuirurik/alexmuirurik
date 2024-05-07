@@ -15,7 +15,7 @@ const Contact = () => {
                                     </div>
                                     <div className="description-section md:w-4/6 lg:w-5/6">
                                         <h3 className="work-title text-xl">Data Science With Python <small className='text-xs text-[#6c757d]'>Sep 2, 2023</small><span className='text-xs text-[#6c757d]'>-</span><small className='text-xs text-[#6c757d]'>Present</small></h3>
-                                        <p><small className="work-description">I analyze different APIs for performance so we can integrate them into a riskact app. I&apos;ve tested APIs from Microsoft Teams, Slack, Twilio, Zoom, ChatGPT, and Dropbox..</small>
+                                        <p><small className="work-description">The certification focused on machine learning and data science with Python. I learned data visualization, analysis, and manipulation using python libraries like Pandas, Matplotlib, and Seaborn.</small>
                                         </p>
                                     </div>
                                 </div>
@@ -24,9 +24,11 @@ const Contact = () => {
                                         <span className='text-xs text-[#6c757d] [writing-mode:vertical-lr] lg:[writing-mode:unset]'>Coursera IBM </span>
                                     </div>
                                     <div className="description-section md:w-4/6 lg:w-5/6">
-                                        <h3 className="work-title text-xl">Meta Front-End Developer <small className='text-xs text-[#6c757d]'>Jan 9, 2023</small><span className='text-xs text-[#6c757d]'>-</span><small className='text-xs text-[#6c757d]'> Present</small></h3>
+                                        <h3 className="work-title text-xl">IBM Back-End JavaScript Developer <small className='text-xs text-[#6c757d]'>Jan 9, 2023</small><span className='text-xs text-[#6c757d]'>-</span><small className='text-xs text-[#6c757d]'> Present</small></h3>
                                         <p>
-                                            <small className="work-description">I write interesting guides on how to play, win, and strategize casino gameplays. Interesting topics I&apos;ve worked on include Getting The Best Out of an Online Bingo Site, How To Enjoy a Night of Playing Bingo, etc.</small>
+                                            <small className="work-description">
+                                                I learned to build, deploy, test, run, and manage full-stack applications. We covered technologies such as Git, Docker, Application Security, Serverless Computing, Containers, REACT, and AWS.  
+                                            </small>
                                         </p>
                                     </div>
                                 </div>

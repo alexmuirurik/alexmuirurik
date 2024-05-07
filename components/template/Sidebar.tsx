@@ -8,10 +8,12 @@ import { faLinkedinIn, faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 import { navbar } from './lists'
 import { usePathname} from 'next/navigation'
+import { useRouter } from 'next/navigation'
 
 
 const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] })
 const Sidebar = () => {
+    const navigate = useRouter()
     const pathname = usePathname()
     const isActive = (href:string) => pathname === href
     return (
@@ -19,9 +21,20 @@ const Sidebar = () => {
             <div className="sidebar bg-platinum-light dark:bg-rich-black rounded-md w-44 py-0 h-svh z-50">
                 <div className='sidebar-header'>
                     <div className="sidebar-header flex flex-col content-center items-center py-4">
-                        <Image className='border-8 border-ghost-white dark:border-gun-metal rounded-full' src="/img/home/alexmuiruri.jpg" alt='' height={120} width={120} />
-                        <h1 className={pacifico.className + " mt-3 text-2xl font-[bold_!important]"}>Alex Muiruri</h1>
-                        <h4 className="text-[cadetblue] text-xs mt-0.5 font-bold">Full-Stack Web Developer</h4>
+                        <Link href='/'>
+                            <Image className='border-8 border-ghost-white dark:border-gun-metal rounded-full cursor-pointer' 
+                                src="/img/home/alexmuiruri.jpg" alt='' height={120} width={120}/>
+                        </Link>
+                        <h1 className={pacifico.className + " mt-3 text-2xl font-[bold_!important] cursor-pointer"}>
+                            <Link href='/' >
+                                Alex Muiruri
+                            </Link>
+                        </h1>
+                        <h4 className="text-[cadetblue] text-xs mt-0.5 font-bold cursor-pointer">
+                            <Link href='/'>
+                                Full-Stack Web Developer
+                            </Link>
+                        </h4>
                         <div className="social-links flex gap-3 mt-4">
                             <Link href="https://www.facebook.com/alexxmuiruri/" target='_blank' className='inline-block bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs'>
                                 <FontAwesomeIcon icon={faFacebookF} className='' />

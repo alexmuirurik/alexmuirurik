@@ -23,7 +23,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 			<body className={nunito.className}>
 				<NextTopLoader height={1} />
 				<Sidebar />
-				<main className="main relative w-full lg:w-[calc(100%_-_13rem)] lg:left-48 bottom-0">
+				<main className="main relative w-full lg:w-[calc(100%_-_13rem)] px-2 lg:left-48 bottom-0">
 					<Navbar />
 
 					{children}					

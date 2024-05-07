@@ -11,19 +11,20 @@ const About = () => {
                         <div className="card">
                             <div className="card-body p-0 ">
                                 <p> 
-                                    Thanks for visiting my resume website. I&apos;d be glad if you hit that &apos;Contact Me&apos; button above and tell me more about yourself. 
+                                    Thanks for visiting my resume website. Read on to learn about my skills and services -- hopefully I&apos;ll help you eliminate that initial skeptism :)  
                                 </p>
                                 <p>Hi there,</p>
-                                <p>I&apos;m a tech writer and full-stack web developer with over 5 years of experience. I specialize in creating curated content for fintech, cyber security, 
-                                    web development, cloud hosting, and investment companies and developing admin dashboards for SMBs. 
+                                <p>
+                                    I&apos;m Alex Muiruri, a tech writer and full-stack web developer. I specialize in creating curated content for fintech, cyber security, 
+                                        web development, cloud hosting, and investment companies and developing admin dashboards for SMBs. 
                                 </p>
                                 <p>
-                                    Do you have a Figma file you&apos;d like me to use? No? It&apos;s okay. We can design the entire system from scratch. I can create Laravel, React, NextJS, and Python 
-                                    applications with basic to complex functionalities. 
+                                    I can work with an agile team to develop a system than meets your requirements or design an entire system from scratch. 
+                                    I&apos;m well-versed in creating Laravel, React, NextJS, and Python applications with basic to complex functionalities. 
                                 </p>
                                 <p>
-                                    I can also help you connect with customers, increase brand awareness, and improve your search engine ranking with high-quality content. Contact me at content@alexmuiruri.com 
-                                    for long and short-form copy, blog posts, feature articles, and custom web designs.
+                                    I can also help you create AI-free and original content that connects with customers, increases brand awareness, and improves your search engine ranking. 
+                                    Contact me at <span className='font-bold text-cyan-600'>content@alexmuiruri.com</span> for long and short-form copy, blog posts, feature articles, and custom web designs.
                                 </p>
                                 <p>
                                     If you&apos;re just scrolling through my website, read one of my sample articles below and tell me what you think. Your views are important to me. Thanks.

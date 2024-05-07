@@ -10,7 +10,7 @@ const page = async ( {searchParams}: {searchParams?: { [key: string]: string | s
 	const req = await wpposts(pgs)
 	const hdr = req.headers
  	return (
-		<div className="main-wrapper min-h-svh">
+		<div className="main-wrapper container-fluid min-h-svh">
 			<PageHero pagename='Blog Posts' />
 			<section className="dportfolio py-2 px-0 bg-transparent rounded-3">
 				<div className="container-fluid md:p-0">

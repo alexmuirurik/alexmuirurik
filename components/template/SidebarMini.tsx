@@ -20,7 +20,6 @@ const SidebarMini = () => {
         sidebarWrapper?.classList.remove('w-48')
         return setbars(faBars)
     }
-    useEffect(() => { hideSidebar() }, [ usePathname() ] )
     
     return (
         <Link href='#' className='sidebarmini lg:hidden ease-in-out duration-800' onClick={hideSidebar}>
