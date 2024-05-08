@@ -10,10 +10,10 @@ const page = async ({params, searchParams}: {params: {slug: string}, searchParam
 	return (
 		<div className="main-wrapper container-fluid min-h-svh">
 			<div className="row">
-				<div className="col md:w-9/12">
+				<div className="col md:w-9/12 ps-0">
 					{ (post[0]) && <SinglePostCard post={post[0]} />}
 				</div>
-				<div className="col md:w-3/12">
+				<div className="col md:w-3/12 pe-0">
 					<PostCard page={pgs} />
 				</div>
 			</div>

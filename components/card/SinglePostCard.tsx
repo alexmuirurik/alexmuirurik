@@ -7,7 +7,7 @@ const SinglePostCard = ({post}:any) => {
             <div className="post-image rounded-md overflow-hidden">
                 <ImageToast image={post.featured_media} classList='w-full' />
             </div>
-            <div className="content-wrapper rounded-md bg-ghost-white dark:bg-card-dark mx-3 px-3">
+            <div className="content-wrapper rounded-md bg-ghost-white dark:bg-card-dark mx-1 px-2">
                 <div className="my-2 py-8 ">
                     <h2 className="text-4xl font-bold">{post.title.rendered}</h2>
                 </div>
