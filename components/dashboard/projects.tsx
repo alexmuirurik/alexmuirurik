@@ -10,7 +10,7 @@ const Projects = async () => {
     const portfoli = await req.json()
     const RenderPortfolio = () => portfoli.map((portfolio:any, index: any) => {
         if(index > 3) return
-        return <div className="flex gap-2 border-t dark:border-gray-700 pt-4">
+        return <div className="flex gap-2 border-t dark:border-gray-700 pt-4" key={portfolio.id}>
             <div className="side w-8 h-8 border border-gray-700 rounded-full p-1">
                 <ImageToast classList='rounded-full' image={portfolio.featured_media} />
             </div>
