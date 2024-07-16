@@ -8,3 +8,16 @@ export const titleCase = (str:string) => {
 export const reduceWords = (text: string, max:number) => {
     return text && text.length > max ? text.substring(0, max).concat('...') : text
 }
+
+export const trimWords = (string: string, maxWords: number) => {       
+    var strippedString = string.trim();      
+    var array = strippedString.split(" ");
+    var wordCount = array.length;
+    var string = array.splice(0, maxWords).join(" ");
+
+    if(wordCount > maxWords) {
+        string += "...";
+    }
+
+    return string
+}

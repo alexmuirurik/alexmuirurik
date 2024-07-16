@@ -14,7 +14,7 @@ const page = async ( {searchParams}: {searchParams?: { [key: string]: string | s
 			<PageHero pagename='Blog Posts' />
 			<section className="dportfolio py-2 px-0 bg-transparent rounded-3">
 				<div className="container-fluid md:p-0">
-					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-stretch m-auto">
+					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 items-stretch m-auto">
 						<PostCard page={pgs} />
 					</div>
 					<div className="join flex gap-4 justify-center mt-8">

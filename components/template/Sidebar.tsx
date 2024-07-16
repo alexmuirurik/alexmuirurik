@@ -4,7 +4,7 @@ import { Pacifico } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedinIn, faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn, faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 import { navbar } from './lists'
 import { usePathname} from 'next/navigation'
@@ -20,7 +20,7 @@ const Sidebar = () => {
         <aside className="sidebar-wrapper fixed hidden lg:block w-0 lg:w-48 ease-in-out duration-1000 transition-all z-50" id='sidebarWrapper'>
             <div className="sidebar bg-platinum-light dark:bg-rich-black rounded-md w-44 py-0 h-svh z-50">
                 <div className='sidebar-header'>
-                    <div className="sidebar-header flex flex-col content-center items-center py-4">
+                    <div className="sidebar-header flex flex-col content-center items-center py-2">
                         <Link href='/'>
                             <Image className='border-8 border-ghost-white dark:border-gun-metal rounded-full cursor-pointer' 
                                 src="/img/home/alexmuiruri.jpg" alt='' height={120} width={120}/>
@@ -35,19 +35,19 @@ const Sidebar = () => {
                                 Full-Stack Web Developer
                             </Link>
                         </h4>
-                        <div className="social-links flex gap-3 mt-4">
-                            <Link href="https://www.facebook.com/alexxmuiruri/" target='_blank' className='inline-block bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs'>
-                                <FontAwesomeIcon icon={faFacebookF} className='' />
-                            </Link>
+                        <div className="social-links flex gap-3">
                             <Link href="https://www.linkedin.com/in/alex-muiruri-writer/" target='_blank' className='inline-block bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs'>
                                 <FontAwesomeIcon icon={faLinkedinIn} className='' />
                             </Link>
                             <Link href="https://github.com/alexmuirurik?tab=overview&from=2023-12-01&to=2023-12-31" target='_blank' className='inline-block bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs'>
                                 <FontAwesomeIcon icon={faGithub} className='' />
                             </Link>
+                            <Link href="https://x.com/kiruri_alex" target='_blank' className='inline-block bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs'>
+                                <FontAwesomeIcon icon={faTwitter} className='' />
+                            </Link>
                         </div>
                     </div>
-                    <div className="sidebar-body mt-2">
+                    <div className="sidebar-body">
                         <ul className="menu">
                             {navbar.map((nav, i) => {
                                 const active = (isActive(nav.url)) ? 'active' : ''

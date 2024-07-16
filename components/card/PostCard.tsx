@@ -1,14 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
 import ImageToast from '../toast/ImageToast'
-import { post, wpposts } from '@/utils/posts'
+import { wpposts } from '@/utils/posts'
 import { reduceWords } from '@/utils/string'
 
 const PostCard = async ({page}: {page: number}) => {
     const req = await wpposts(page)
     const posts = await req.json() 
     return posts.map((post: any) => 
-        <div className="relative aspect-w-16 aspect-h-9 bg-transparent mb-4 basis-1/2" key={post.id}>
+        <div className="relative flex mb-4 h-full overflow-hidden" key={post.id}>
             <div className="card card-compact border dark:border-gray-700 rounded-md shadow-xl overflow-hidden">
                 <figure className='max-w-full'>
                     <ImageToast image={post.featured_media} />
