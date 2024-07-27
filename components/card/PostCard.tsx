@@ -8,7 +8,7 @@ const PostCard = async ({page}: {page: number}) => {
     const req = await wpposts(page)
     const posts = await req.json() 
     return posts.map((post: any) => 
-        <div className="relative flex mb-4 h-full overflow-hidden" key={post.id}>
+        <div className="relative flex mb-4 overflow-hidden" key={post.id}>
             <div className="card card-compact border dark:border-gray-700 rounded-md shadow-xl overflow-hidden">
                 <figure className='max-w-full'>
                     <ImageToast image={post.featured_media} />
