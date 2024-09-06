@@ -8,6 +8,7 @@ import Link from 'next/link'
 const PortfolioCard = async ({page}: {page: number}) => {
     const req = await wpPortfolio(page)
     const portfolio = await req.json()
+    console.log(portfolio)
     return portfolio.map( (portfolio: any) => 
         <div className="relative flex mb-4 h-full"  key={portfolio.id}>
             <div className="card border border-gray-700 rounded-md">
@@ -17,7 +18,7 @@ const PortfolioCard = async ({page}: {page: number}) => {
                 <div className="card-body p-2">
                     <div className="relative h-4/5">
                         <h4 className="text-sm font-bold mb-1">
-                            <Link href={portfolio.acf.portfolio_link} >
+                            <Link href={'/portfolio/' + portfolio.slug } >
                                 {portfolio.title.rendered}
                             </Link>
                         </h4>
