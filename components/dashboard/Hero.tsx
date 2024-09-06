@@ -5,28 +5,37 @@ import React from 'react'
 const Hero = () => {
     const date = new Date
     const experience = {
-        writing : date.getFullYear() - 2018, 
-        coding  : date.getFullYear() - 2021
+        writing: date.getFullYear() - 2018,
+        coding: date.getFullYear() - 2021
     }
-    
+
     return (
-        <section className="hero items-start p-0 xl:items-center relative h-[90svh] md:h-[70svh] dark:bg-[#2c363f] bg-[#cec6bd] z-10 border dark:border-gray-700 rounded-b-md overflow-hidden" 
-            style={{backgroundImage: "url(/img/home/home.png)"}} id="hero">
-            <div className="container p-8 mb-8">
-                <div className="">
-                    <div className="sm:w-3/4 md:w-3/5">
+        <section className="hero items-start p-0 xl:items-center relative h-[90svh] md:h-[70svh] dark:bg-[#2c363f] bg-[#cec6bd] z-10 border dark:border-gray-700 rounded-b-md overflow-hidden" id="hero">
+            <div className="container flex p-8 mb-8">
+                <div className="sm:w-full lg:w-4/5">
+                    <div className="">
                         <h5 className='text-xl md:text-2xl font-extrabold'>Hi there, </h5>
                         <h3 className='text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-bold'>I&apos;m <span className='text-success'>Alex Muiruri</span></h3>
                         <h5 className="text-xl md:text-2xl font-semibold">A <span className=''>Full Stack Web Developer</span></h5>
                         <p className='mt-5'>
-                            I have {experience.writing} years of freelance tech and casino writing experience and {experience.coding} years of coding 
+                            I have {experience.writing} years of freelance tech and casino writing experience and {experience.coding} years of coding
                             experience. I can help you design web apps using NodeJS, NextJS, and Laravel and craft engaging content for your website.
                         </p>
-
                     </div>
-                    <div className="btns flex justify-between mt-8 sm:w-3/4 md:w-2/5">
-                        <Link className='btn btn-sm btn-success' href='/portfolio'>View My Portfolio</Link> 
+                    <div className="btns flex justify-between mt-8 w-full md:w-4/5 xl:w-3/5">
+                        <Link className='btn btn-sm btn-success' href='/portfolio'>View My Portfolio</Link>
                         <Link className="btn btn-sm btn-primary" href='/assets/doc/Resume-Alex-Muiruri-1.pdf' target='_blank'>Download CV</Link>
+                    </div>
+                </div>
+                <div className="card skills hidden md:block md:w-2/5 xl:w-1/5 border dark:border-gray-700 rounded-lg h-full mb-4 p-4">
+                    <div className="card-body text-sm w-full p-0">
+                        <ul className="list-group list-group-flush marker:text-sky-400 list-disc pl-5 text-slate-400">
+                            <li className="list-group-item p-2">NextJs and ReactJS</li>
+                            <li className="list-group-item p-2">PHP, Laravel, and LiveWire</li>
+                            <li className="list-group-item p-2">Python and FastAPI</li>
+                            <li className="list-group-item p-2">MongoDB, PostgreSQL, and MySQL</li>
+                            <li className="list-group-item p-2">Google Docs and Microsoft Word</li>
+                        </ul>
                     </div>
                 </div>
             </div>

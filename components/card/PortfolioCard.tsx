@@ -17,7 +17,9 @@ const PortfolioCard = async ({page}: {page: number}) => {
                 <div className="card-body p-2">
                     <div className="relative h-4/5">
                         <h4 className="text-sm font-bold mb-1">
-                            <Link href={portfolio.acf.portfolio_link} target='_blank' >{portfolio.title.rendered}</Link>
+                            <Link href={portfolio.acf.portfolio_link} >
+                                {portfolio.title.rendered}
+                            </Link>
                         </h4>
                         <div className='text-xs text-gray-500' dangerouslySetInnerHTML={{__html: trimWords(portfolio.content.rendered, 20)}} />
                     </div>
