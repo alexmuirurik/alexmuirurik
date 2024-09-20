@@ -16,15 +16,15 @@ const About = () => {
                                 </p>
                                 <p>Hi there,</p>
                                 <p>
-                                    I&apos;m Alex Muiruri, a full-stack web developer. I specialize in creating full-stack web applications for system administration. 
+                                    I&apos;m Alex Muiruri, a full-stack web developer. I specialize in creating web applications for system administration and monitoring. 
                                     Think job boards, eCommerce shops, inventory management applications, and file management systems. 
                                 </p>
                                 <p>
-                                    I can work with an agile team to develop a system than meets your requirements or design an entire system from scratch. 
-                                    I&apos;m well-versed in creating Laravel, React, NextJS, and Python applications with basic to complex functionalities. 
+                                    I can work with an agile team to develop a system that meets your requirements or design an entire system from scratch. 
+                                    I&apos;m well-versed in technologies like Laravel, React, NextJS, and Django and can build apps with basic to complex functionalities. 
                                 </p>
                                 <p>
-                                    I can also help you build WordPress themes and plugins, craft UX/UI designs using code, and create react-native mobile applications. 
+                                    I can also help you build WordPress themes and plugins, craft UX/UI designs using JS and CSS, and create React-Native mobile applications. 
                                     Contact me at <span className='font-bold text-cyan-600'>content@alexmuiruri.com</span> for custom web designs.
                                 </p>
                                 <p>
