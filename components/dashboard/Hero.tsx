@@ -18,7 +18,7 @@ const Hero = () => {
                         <h3 className='text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-bold'>I&apos;m <span className='text-success'>Alex Muiruri</span></h3>
                         <h5 className="text-xl md:text-2xl font-semibold">A <span className=''>Full Stack Web Developer</span></h5>
                         <p className='mt-5'>
-                            I have {experience.coding} years of coding experience with technologies such as ReactJS, NextJS, Django, and Laravel. 
+                            I have {experience.coding} years of coding experience with technologies such as ReactJS, NextJS, NuxtJS, Django, and Laravel. 
                             I'll help you build the front-end, back-end, or the entire web application from scratch and upload it on AWS, Vercel, Azure, or Cpanel. 
                         </p>
                     </div>
