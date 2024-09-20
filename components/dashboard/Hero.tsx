@@ -19,7 +19,7 @@ const Hero = () => {
                         <h5 className="text-xl md:text-2xl font-semibold">A <span className=''>Full Stack Web Developer</span></h5>
                         <p className='mt-5'>
                             I have {experience.coding} years of coding experience with technologies such as ReactJS, NextJS, NuxtJS, Django, and Laravel. 
-                            I'll help you build the front-end, back-end, or entire web application from scratch and deploy it on AWS, Vercel, Azure, or CPanel. 
+                            I&apos;ll help you build the front-end, back-end, or entire web application from scratch and deploy it on AWS, Vercel, Azure, or CPanel. 
                         </p>
                     </div>
                     <div className="btns flex justify-between mt-8 w-full md:w-4/5 xl:w-3/5">
