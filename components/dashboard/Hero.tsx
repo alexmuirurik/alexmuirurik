@@ -18,8 +18,8 @@ const Hero = () => {
                         <h3 className='text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-bold'>I&apos;m <span className='text-success'>Alex Muiruri</span></h3>
                         <h5 className="text-xl md:text-2xl font-semibold">A <span className=''>Full Stack Web Developer</span></h5>
                         <p className='mt-5'>
-                            I have {experience.writing} years of freelance tech and casino writing experience and {experience.coding} years of coding
-                            experience. I can help you design web apps using NodeJS, NextJS, and Laravel and craft engaging content for your website.
+                            I have {experience.coding} years of coding experience with technologies such as ReactJS, NextJS, Django, and Laravel. 
+                            I'll help you build the front-end, back-end, or the entire web application from scratch and upload it on AWS, Vercel, Azure, or Cpanel. 
                         </p>
                     </div>
                     <div className="btns flex justify-between mt-8 w-full md:w-4/5 xl:w-3/5">
@@ -45,13 +45,13 @@ const Hero = () => {
                         <h5 className='text-sm text-primary font-bold mb-1'>Open to work</h5>
                         <p className='text-xs'>
                             <span className='font-bold'>Jobs: </span>
-                            Freelance Copywriter, Technical Writer, Web Content Writer, Laravel Developer and Full Stack System Developer
+                            Technical Writer, Javascript Developer, NextJs Developer, Laravel Developer and Full Stack System Developer
                         </p>
                     </div>
                     <div className="md:w-1/2 rounded-md bg-ghost-white dark:bg-card-dark p-4 mt-4 md:mt-0">
                         <h5 className='text-sm text-emerald-600 font-bold mb-1'>Skills Earned</h5>
                         <p className='text-xs'>
-                            Blog Writing, SEO Writing, Tech Writing, Proofreading, Documentation Writing, React, PHP, Laravel, Jquery, MySQL, APIs, and OAuth
+                            Documentation Writing, React, NextJs, NuxtJs, Vue, PHP, Laravel, Jquery, MySQL, PostgreSQL, MongoDB, APIs, and OAuth
                         </p>
                     </div>
                 </div>

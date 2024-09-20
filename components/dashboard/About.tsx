@@ -16,20 +16,21 @@ const About = () => {
                                 </p>
                                 <p>Hi there,</p>
                                 <p>
-                                    I&apos;m Alex Muiruri, a tech writer and full-stack web developer. I specialize in creating curated content for fintech, cyber security, 
-                                        web development, cloud hosting, and investment companies and developing admin dashboards for SMBs. 
+                                    I&apos;m Alex Muiruri, a full-stack web developer. I specialize in creating full-stack web applications for system administration. 
+                                    Think job boards, eCommerce shops, inventory management applications, and file management systems. 
                                 </p>
                                 <p>
                                     I can work with an agile team to develop a system than meets your requirements or design an entire system from scratch. 
                                     I&apos;m well-versed in creating Laravel, React, NextJS, and Python applications with basic to complex functionalities. 
                                 </p>
                                 <p>
-                                    I can also help you create AI-free and original content that connects with customers, increases brand awareness, and improves your search engine ranking. 
-                                    Contact me at <span className='font-bold text-cyan-600'>content@alexmuiruri.com</span> for long and short-form copy, blog posts, feature articles, and custom web designs.
+                                    I can also help you build WordPress themes and plugins, craft UX/UI designs using code, and create react-native mobile applications. 
+                                    Contact me at <span className='font-bold text-cyan-600'>content@alexmuiruri.com</span> for custom web designs.
                                 </p>
                                 <p>
-                                    If you&apos;re just scrolling through my website, read one of my sample articles below and tell me what you think. Your views are important to me. Thanks.
+                                    If you&apos;re just scrolling through my website, read some of my articles below and tell me what you think. Your views are important to me. 
                                 </p>
+                                <p>Kind regards</p>
                             </div>
                         </div>
                     </div>
