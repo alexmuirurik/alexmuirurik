@@ -5,24 +5,41 @@ const page = () => {
 	return (
 		<div className='main-wrapper min-h-svh'>
 			<PageHero pagename='Hire Me' />
-			<section id="portfolio-details" className="portfolio-details !px-0 pt-0 bg-white dark:bg-black">
+			<section id="portfolio-details" className="portfolio-details pt-0 bg-white dark:bg-black">
 				<div className="container-fluid mt-0">
 					<div className="row">
 						<div className="col rounded-md flex-shrink m-auto px-0 bg-ghost-white dark:bg-card-dark">
 							<div className="entry-content p-4 px-8">
-								<p className='text-md'>Thank you for choosing to work with me. Wondering how to get started?</p>
-								<p className='text-md'><strong>This is how it works</strong>:</p>
-								<p className='text-md'>First, you send an email with your content requirements and/or request a <a href="https://alexmuiruri.com/order-content/">paid test article</a>. 
-									If you think I&apos;m a good fit, after receiving the test article, you request up to 5, 1500-word articles to be completed that week.
+								<p className="text-md mb-4 text-gray-600 dark:text-gray-400">
+									Wondering how to get started? Here&apos;s a simple breakdown of the onboarding process:
 								</p>
-								<p className='text-md'>I like to receive weekly content orders so I can organize my calendar well. If you&apos;re sending work on Wednesday, send a batch that 
-									I&apos;ll do on Thursday and Friday.
-								</p>
-								<p className='text-md'>But if you&apos;re sending a content order on Friday, send a batch that I&apos;ll do the following week. If you want, you can also send a 
-									batch for an entire month so I can set up my calendar.
-								</p>
-								<p className='text-md'>Ready to place your next order? <a href="https://alexmuiruri.com/order-content/">Go here</a> to request a paid test article or 
-									contact me at content@alexmuiruri.com to place an order for the week or the month. Have fun!
+								<ol className="list-decimal list-inside mb-6">
+									<li className="mb-4">
+										<strong className="text-gray-800 dark:text-gray-200">Discovery Call</strong>
+										<p className="text-md text-gray-600 dark:text-gray-400">
+											Send me an email at <a href="mailto:content@alexmuiruri.com" className="text-blue-500 hover:underline">content@alexmuiruri.com</a> with your project details, requirements, or to request a paid test project. This helps us align on your needs right from the start.
+											After your initial inquiry, we&apos;ll schedule a call to discuss your project in detail. This is your opportunity to share your vision and for me to ask questions that will help clarify the scope of work.
+										</p>
+									</li>
+									<li className="mb-4">
+										<strong className="text-gray-800 dark:text-gray-200">Proposal & Agreement</strong>
+										<p className="text-md text-gray-600 dark:text-gray-400">
+											Based on our conversation, I&apos;ll provide a tailored proposal outlining the project scope, timeline, and budget.
+											Once we agree on the terms, we&apos;ll formalize our partnership with a signed contract.
+											We&apos;ll hold a kickoff meeting to establish communication channels, project milestones, and any tools we&apos;ll use throughout our collaboration.
+										</p>
+									</li>
+									<li className="mb-4">
+										<strong className="text-gray-800 dark:text-gray-200">Development Phase</strong>
+										<p className="text-md text-gray-600 dark:text-gray-400">
+											I&apos;ll start working on your project, providing regular updates and seeking your feedback to ensure we stay aligned with your goals.
+											Before launch, I&apos;ll conduct thorough testing to ensure everything works perfectly.
+											We&apos;ll launch your project and monitor it closely to address any immediate needs.
+										</p>
+									</li>
+								</ol>
+								<p className="text-md text-gray-600 dark:text-gray-400">
+									Looking forward to working together!
 								</p>
 							</div>
 						</div>
