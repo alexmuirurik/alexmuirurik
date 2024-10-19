@@ -8,10 +8,6 @@ import SidebarMini from './SidebarMini'
 
 const Navbar = () => {
     const [message, setmessage]   = useState('')
-    const [sidebar, setsidebar]   = useState('')
-    const hideSidebar = () => {
-        
-    }
     const copyEmail = (e:any) => {
         navigator.clipboard.writeText('content@alexmuiruri.com')
         setmessage('Email Copied')

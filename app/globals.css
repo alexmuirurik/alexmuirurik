@@ -34,11 +34,24 @@
         @apply w-full h-auto rounded-md overflow-hidden aspect-video
     }
 
-    h2,
-    h3,
-    h4,
-    h5{
-        @apply mb-4
+    .content {
+        @apply px-4 text-base
+    }
+
+    .content ul,
+    .content ol{
+        @apply ps-4
+    }
+
+    .content li{
+        @apply list-decimal py-1
+    }
+
+    .content h2,
+    .content h3,
+    .content h4,
+    .content h5{
+        @apply my-2 text-lg
     }
 
     p {

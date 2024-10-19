@@ -4,6 +4,7 @@ import PortfolioCard from '@/components/card/PortfolioCard'
 import { wpPortfolio } from '@/utils/portfolio'
 import Pagination from '@/components/card/Pagination'
 
+export const dynamic = 'force-dynamic'
 const page = async ( {searchParams}: {searchParams?: { [key: string]: string | string[] | undefined } }) => {
 	const pgs = (searchParams?.page) ? Number(searchParams?.page) : 1 
 	const req = await wpPortfolio(pgs)

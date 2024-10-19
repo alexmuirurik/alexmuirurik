@@ -8,7 +8,7 @@ const SinglePostCard = ({post}:any) => {
                 <ImageToast image={post.featured_media} classList='w-full' />
             </div>
             <div className="content-wrapper rounded-md bg-ghost-white dark:bg-card-dark mx-1 px-2">
-                <div className="my-2 py-8 ">
+                <div className="pt-3 ">
                     <h2 className="text-4xl font-bold">{post.title.rendered}</h2>
                 </div>
                 <div className="content p-3" dangerouslySetInnerHTML={{ __html: post.content.rendered }}>

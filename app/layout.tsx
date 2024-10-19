@@ -6,12 +6,13 @@ import Footer from "@/components/template/Footer";
 import Navbar from "@/components/template/Navbar";
 import Sidebar from "@/components/template/Sidebar";
 import NextTopLoader from "nextjs-toploader";
+import { SidebarContextProvider } from "@/context/usesidebar";
 
-const nunito= Nunito({subsets:['latin']})
+const nunito = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: "My Resume | Alex Muiruri - https://alexmuiruri.com",
-	description: "Full-stack Web Developer | Javascript, React, NodeJS | Python, Django | PHP, Laravel| HTML | CSS ", 
+	description: "Full-stack Web Developer | Javascript, React, NodeJS | Python, Django | PHP, Laravel| HTML | CSS ",
 }
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
@@ -22,14 +23,15 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 			</head>
 			<body className={nunito.className}>
 				<NextTopLoader height={1} />
-				<Sidebar />
-				<main className="main relative w-full lg:w-[calc(100%_-_13rem)] px-2 lg:left-48 bottom-0">
-					<Navbar />
+				<SidebarContextProvider >
+					<Sidebar />
+					<main className="main relative w-full lg:w-[calc(100%_-_13rem)] px-2 lg:left-48 bottom-0">
+						<Navbar />
+						{children}
 
-					{children}					
-					
-					<Footer />
-				</main>
+						<Footer />
+					</main>
+				</SidebarContextProvider>
 			</body>
 		</html>
 	);

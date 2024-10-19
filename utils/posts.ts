@@ -9,11 +9,17 @@ export interface post {
 }
 
 export const wpposts = async (page: number) => {
-    const req  = await fetch('https:resume.alexmuiruri.com/wp-json/wp/v2/posts?per_page=12&page=' + page)
+    let myHeaders = new Headers();
+    myHeaders.append('pragma', 'no-cache');
+    myHeaders.append('cache-control', 'no-cache');
+    const req  = await fetch('https:resume.alexmuiruri.com/wp-json/wp/v2/posts?per_page=12&page=' + page, { headers: myHeaders })
     return req
 }
 
 export const singlepost = async (slug: string) => {
-    const req	= await fetch('https://resume.alexmuiruri.com/wp-json/wp/v2/posts?slug=' + slug)
+    let myHeaders = new Headers();
+    myHeaders.append('pragma', 'no-cache');
+    myHeaders.append('cache-control', 'no-cache');
+    const req	= await fetch('https://resume.alexmuiruri.com/wp-json/wp/v2/posts?slug=' + slug, { headers: myHeaders })
     return req
 }

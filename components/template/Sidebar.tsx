@@ -9,15 +9,19 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 import { navbar } from './lists'
 import { usePathname} from 'next/navigation'
 import { useRouter } from 'next/navigation'
+import { useSidebarContext } from '@/context/usesidebar'
 
 
 const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] })
 const Sidebar = () => {
+    const {hidden} = useSidebarContext()
     const navigate = useRouter()
     const pathname = usePathname()
     const isActive = (href:string) => pathname === href
+    const show = (hidden) ? 'hidden w-0' : 'w-48' 
     return (
-        <aside className="sidebar-wrapper fixed hidden lg:block w-0 lg:w-48 ease-in-out duration-1000 transition-all z-50" id='sidebarWrapper'>
+        <aside className={ show + " sidebar-wrapper fixed lg:block lg:w-48 ease-in-out duration-1000 transition-all z-50"} 
+            id='sidebarWrapper'>
             <div className="sidebar bg-platinum-light dark:bg-rich-black rounded-md w-44 py-0 h-svh z-50">
                 <div className='sidebar-header'>
                     <div className="sidebar-header flex flex-col content-center items-center py-2">

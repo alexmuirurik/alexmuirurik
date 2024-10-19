@@ -15,11 +15,11 @@ const PostCard = async ({page}: {page: number}) => {
                 </figure>
                 <div className="card-body bg-ghost-white dark:bg-card-dark" >
                     <h2 className="card-title">
-                        <Link href={'/posts/'+post.slug}>
+                        <Link className='text-base text-neutral-300' href={'/posts/'+post.slug}>
                             {post.title.rendered && reduceWords(post.title.rendered.toString(), 34)} 
                         </Link>
                     </h2>
-                    <div className="content" dangerouslySetInnerHTML={{__html: reduceWords(post.excerpt.rendered, 100 ) }}>
+                    <div className="text-sm text-gray-400" dangerouslySetInnerHTML={{__html: reduceWords(post.excerpt.rendered, 100 ) }}>
                     </div>
                 </div>
             </div> 
