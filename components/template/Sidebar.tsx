@@ -24,7 +24,7 @@ const Sidebar = () => {
             id='sidebarWrapper'>
             <div className="sidebar bg-platinum-light dark:bg-rich-black rounded-md w-44 py-0 h-svh z-50">
                 <div className='sidebar-header'>
-                    <div className="sidebar-header flex flex-col content-center items-center py-2">
+                    <div className="sidebar-header flex flex-col content-center items-center">
                         <Link href='/'>
                             <Image className='border-8 border-ghost-white dark:border-gun-metal rounded-full cursor-pointer' 
                                 src="/img/home/alexmuiruri.jpg" alt='' height={120} width={120}/>
@@ -39,7 +39,7 @@ const Sidebar = () => {
                                 Full-Stack Web Developer
                             </Link>
                         </h4>
-                        <div className="social-links flex gap-3">
+                        <div className="social-links flex gap-3 mt-3">
                             <Link href="https://www.linkedin.com/in/alex-muiruri-writer/" target='_blank' className='inline-block bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs'>
                                 <FontAwesomeIcon icon={faLinkedinIn} className='' />
                             </Link>
