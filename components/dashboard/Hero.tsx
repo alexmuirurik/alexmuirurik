@@ -18,7 +18,7 @@ const Hero = () => {
                         <h3 className='text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-bold'>I&apos;m <span className='text-success'>Alex Muiruri</span></h3>
                         <h5 className="text-xl md:text-2xl font-semibold">A <span className=''>Full Stack Web Developer</span></h5>
                         <p className='mt-5'>
-                            I have {experience.coding} years of coding experience with technologies such as ReactJS, NextJS, NuxtJS, Django, and Laravel. 
+                            I have {experience.coding} years of coding experience with technologies such as ReactJS, NextJS, Django, and Laravel. 
                             I&apos;ll help you build the front-end, back-end, or entire web application from scratch and deploy it on AWS, Vercel, Azure, or CPanel. 
                         </p>
                     </div>
@@ -32,9 +32,9 @@ const Hero = () => {
                         <ul className="list-group list-group-flush marker:text-sky-400 list-disc pl-5 text-slate-400">
                             <li className="list-group-item p-2">NextJs and ReactJS</li>
                             <li className="list-group-item p-2">PHP, Laravel, and LiveWire</li>
-                            <li className="list-group-item p-2">Python and FastAPI</li>
+                            <li className="list-group-item p-2">Django and FastAPI</li>
                             <li className="list-group-item p-2">MongoDB, PostgreSQL, and MySQL</li>
-                            <li className="list-group-item p-2">Google Docs and Microsoft Word</li>
+                            <li className="list-group-item p-2">Figma and Canva</li>
                         </ul>
                     </div>
                 </div>

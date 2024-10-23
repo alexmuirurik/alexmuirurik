@@ -16,7 +16,7 @@ const About = () => {
                                 </p>
                                 <p>Hi there,</p>
                                 <p>
-                                    I&apos;m Alex Muiruri, a full-stack web developer. I specialize in creating web applications for system administration and monitoring. 
+                                    I&apos;m Alex Muiruri, a full-stack web developer. I specialize in creating Admin Dashboards and Content Management Systems. 
                                     Think job boards, eCommerce shops, inventory management applications, and file management systems. 
                                 </p>
                                 <p>

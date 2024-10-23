@@ -16,7 +16,7 @@ const Projects = async () => {
             </div>
             <div className="aside">
                 <h3 className='text-sm text-gray-300 font-bold mb-1'> 
-                    <Link href={portfolio.acf.portfolio_link} target="_blank">{portfolio.title.rendered}</Link>
+                    <Link href={'/portfolio/' + portfolio.slug} target="_blank">{portfolio.title.rendered}</Link>
                 </h3>
                 <p className='text-sm text-gray-400'>
                     <span>With: <small>React, TheMovieDB</small></span>
