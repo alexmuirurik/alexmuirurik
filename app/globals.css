@@ -38,6 +38,10 @@
         @apply px-4 text-base
     }
 
+    .content a {
+        @apply text-teal-500
+    }
+
     .content ul,
     .content ol{
         @apply ps-4
@@ -51,7 +55,7 @@
     .content h3,
     .content h4,
     .content h5{
-        @apply my-2 text-lg
+        @apply my-2 text-xl
     }
 
     p {
@@ -88,21 +92,12 @@
     }
 
     ::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-        border-radius: 100vh;
-        background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));;
+        width:auto;
+        scrollbar-width: thin;
+        scrollbar-color:var(--scrollbar-bg-color);
     }
 
     ::-webkit-scrollbar-thumb {
-        background: var(--scrollbar-bg-color);
-        border-radius: 100vh;
-        border: 3px solid var(--scrollbar-border-color);
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: var(--scrollbar-border-color);
+        border-radius: 20px;
     }
 }

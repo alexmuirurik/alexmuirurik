@@ -1,4 +1,3 @@
-'use server'
 export interface post { 
     id: React.Key | null | undefined; 
     featured_media: any; 
