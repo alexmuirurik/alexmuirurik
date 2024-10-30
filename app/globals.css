@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+*, *:hover{
+    scrollbar-color: auto;
+}
+
 :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 248, 249, 250, 1;
     --background-end-rgb: 248, 249, 250, 1;
     --scrollbar-bg-color: rgb(231 231 231 / 1);
     --scrollbar-border-color: rgb(196, 190, 190);
-    
 }
 
 [data-theme="dark"] {
@@ -88,16 +91,14 @@
 
 @layer utilities {
     .text-balance {
-        text-wrap: balance;
+        @apply text-balance
     }
 
     ::-webkit-scrollbar {
-        width:auto;
-        scrollbar-width: thin;
-        scrollbar-color:var(--scrollbar-bg-color);
+        @apply w-2 bg-transparent 
     }
 
     ::-webkit-scrollbar-thumb {
-        border-radius: 20px;
+        @apply bg-neutral-400 dark:bg-gray-600 rounded-md 
     }
 }
