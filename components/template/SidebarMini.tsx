@@ -1,9 +1,9 @@
 'use client'
+import React, { useState } from 'react'
 import { useSidebarContext } from '@/context/usesidebar'
 import { faBars, faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
 
 const SidebarMini = () => {
     const [bars, setbars]   =   useState(faBars)

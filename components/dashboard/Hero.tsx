@@ -10,13 +10,17 @@ const Hero = () => {
     }
 
     return (
-        <section className="hero items-start p-0 xl:items-center relative h-[90svh] md:h-[70svh] dark:bg-[#2c363f] bg-[#cec6bd] z-10 border dark:border-gray-700 rounded-b-md overflow-hidden" id="hero">
+        <section className=" dark:bg-[#0b2c5d] bg-[#cec6bd] hero items-start p-0 xl:items-center relative h-[90svh] md:h-[70svh] z-10 border dark:border-gray-700 rounded-b-md overflow-hidden" id="hero">
             <div className="container flex p-8 mb-8">
-                <div className="sm:w-full lg:w-4/5">
+                <div className="sm:w-full lg:w-9/12 z-10">
                     <div className="">
-                        <h5 className='text-xl md:text-2xl font-extrabold'>Hi there, </h5>
-                        <h3 className='text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-bold'>I&apos;m <span className='text-success'>Alex Muiruri</span></h3>
-                        <h5 className="text-xl md:text-2xl font-semibold">A <span className=''>Full Stack Web Developer</span></h5>
+                        <h5 className='text-xl md:text-2xl font-extrabold text-cyan-300'>
+                            <span>Hi there, </span> 
+                            <span className=''>I&apos;m</span>
+                        </h5>
+                        <h3 className='text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-bold'>
+                            <span className='text-success'>Alex Muiruri</span>
+                        </h3>
                         <p className='mt-5'>
                             I have {experience.coding} years of coding experience with technologies such as ReactJS, NextJS, Django, and Laravel. 
                             I&apos;ll help you build the front-end, back-end, or entire web application from scratch and deploy it on AWS, Vercel, Azure, or CPanel. 
@@ -27,16 +31,8 @@ const Hero = () => {
                         <Link className="btn btn-sm btn-primary" href='/assets/doc/Resume-Alex-Muiruri-1.pdf' target='_blank'>Download CV</Link>
                     </div>
                 </div>
-                <div className="card skills hidden md:block md:w-2/5 xl:w-1/5 border dark:border-gray-700 rounded-lg h-full mb-4 p-4">
-                    <div className="card-body text-sm w-full p-0">
-                        <ul className="list-group list-group-flush marker:text-sky-400 list-disc pl-5 text-slate-400">
-                            <li className="list-group-item p-2">NextJs and ReactJS</li>
-                            <li className="list-group-item p-2">PHP, Laravel, and LiveWire</li>
-                            <li className="list-group-item p-2">Django and FastAPI</li>
-                            <li className="list-group-item p-2">MongoDB, PostgreSQL, and MySQL</li>
-                            <li className="list-group-item p-2">Figma and Canva</li>
-                        </ul>
-                    </div>
+                <div className="absolute border- rounded-lg w-full lg:w-6/12 h-full right-0 bottom-3 z-0 ">
+                    <Image className='!static rounded-tl-full w-full h-fit' src={'/img/home/icon.jpg'} alt='' fill />
                 </div>
             </div>
             <div className="absolute bg-white dark:bg-black border-t dark:border-gray-800 p-4 bottom-0 w-100">
