@@ -37,30 +37,6 @@
         @apply w-full h-auto rounded-md overflow-hidden aspect-video
     }
 
-    .content {
-        @apply px-4 text-base
-    }
-
-    .content a {
-        @apply text-teal-500
-    }
-
-    .content ul,
-    .content ol{
-        @apply ps-4
-    }
-
-    .content li{
-        @apply list-decimal py-1
-    }
-
-    .content h2,
-    .content h3,
-    .content h4,
-    .content h5{
-        @apply my-2 text-xl
-    }
-
     p {
         @apply mb-3
     }
@@ -85,6 +61,34 @@
 
     .row > *{
         @apply flex-shrink-0 px-4 mt-4
+    }
+
+    .content {
+        @apply px-4 text-base
+    }
+
+    .content a {
+        @apply text-teal-500
+    }
+
+    .content ul,
+    .content ol{
+        @apply ps-4
+    }
+
+    .content li{
+        @apply list-decimal py-1
+    }
+
+    .content h2,
+    .content h3,
+    .content h4,
+    .content h5{
+        @apply my-2 text-xl
+    }
+
+    .content pre.wp-block-code{
+        @apply  dark:text-gray-300 text-sm italic font-mono border rounded-md p-4 mb-2  
     }
 }
 
