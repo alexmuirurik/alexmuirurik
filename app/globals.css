@@ -98,7 +98,7 @@
         @apply text-balance
     }
 
-    .has-text-align-center{
+    .content p.has-text-align-center{
         @apply text-center mt-1
     }
 
