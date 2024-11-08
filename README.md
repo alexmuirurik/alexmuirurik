@@ -9,7 +9,6 @@ I’m always open to discussing new opportunities and constantly learning to exp
 Let’s build amazing apps together!
 
 **Tech Stack**
---------------
 
 <!--
 **alexmuirurik/alexmuirurik** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
