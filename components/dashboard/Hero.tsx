@@ -11,7 +11,7 @@ const Hero = () => {
 
     return (
         <section className=" dark:bg-[#0b2c5d] bg-[#cec6bd] hero items-start p-0 xl:items-center relative h-[90svh] md:h-[70svh] z-10 border dark:border-gray-700 rounded-b-md overflow-hidden" id="hero">
-            <div className="flex p-8 mb-8">
+            <div className="container xl:container-xxl flex p-8 mb-8">
                 <div className="sm:w-full lg:w-9/12 z-10">
                     <div className="">
                         <h5 className='text-xl md:text-2xl font-extrabold text-cyan-300'>
