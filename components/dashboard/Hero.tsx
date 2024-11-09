@@ -11,7 +11,7 @@ const Hero = () => {
 
     return (
         <section className=" dark:bg-[#0b2c5d] bg-[#cec6bd] hero items-start p-0 xl:items-center relative h-[90svh] md:h-[70svh] z-10 border dark:border-gray-700 rounded-b-md overflow-hidden" id="hero">
-            <div className="container flex p-8 mb-8">
+            <div className="flex p-8 mb-8">
                 <div className="sm:w-full lg:w-9/12 z-10">
                     <div className="">
                         <h5 className='text-xl md:text-2xl font-extrabold text-cyan-300'>
@@ -35,7 +35,7 @@ const Hero = () => {
                     <Image className='!static rounded-tl-full w-full h-fit' src={'/img/home/icon.jpg'} alt='' fill />
                 </div>
             </div>
-            <div className="absolute bg-white dark:bg-black border-t dark:border-gray-800 p-4 bottom-0 w-100">
+            <div className="absolute bg-white dark:bg-black border-t dark:border-gray-800 p-4 bottom-0 w-full">
                 <div className="md:flex md:columns-2 gap-4">
                     <div className="md:w-1/2 rounded-md bg-ghost-white dark:bg-card-dark p-4">
                         <h5 className='text-sm text-primary font-bold mb-1'>Open to work</h5>
