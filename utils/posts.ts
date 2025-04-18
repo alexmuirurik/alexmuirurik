@@ -9,14 +9,14 @@ export interface post {
 }
 
 export const wpposts = async (page: number) => {
-    const req  = await fetch('https:resume.alexmuiruri.com/wp-json/wp/v2/posts?per_page=12&page=' + page, { 
+    const req  = await fetch('http://good.alexmuiruri.com/wp-json/wp/v2/posts?per_page=12&page=' + page, { 
         cache: 'no-cache'
     })
     return req
 }
 
 export const singlepost = async (slug: string) => {
-    const req	= await fetch('https://resume.alexmuiruri.com/wp-json/wp/v2/posts?slug=' + slug, { 
+    const req	= await fetch('http://good.alexmuiruri.com/wp-json/wp/v2/posts?slug=' + slug, { 
         cache: 'no-cache'
     })
     return req
