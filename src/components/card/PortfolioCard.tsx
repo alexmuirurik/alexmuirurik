@@ -1,18 +1,16 @@
 import React from 'react'
 import ImageToast from '../toast/ImageToast'
-import { wpPortfolio } from '@/src/utils/portfolio'
 import { trimWords } from '@/src/utils/string'
 import Link from 'next/link'
+import { Post } from '@/src/utils/types'
 
-const PortfolioCard = async ({ page }: { page: number }) => {
-    const req = await wpPortfolio(page)
-    const portfolio = await req.json()
-    return portfolio.map((portfolio: any) => (
-        <div className="relative flex mb-4" key={portfolio.id}>
+const PortfolioCard = async ({ portfolio }: { portfolio: Post[] }) => {
+    return portfolio.map((portfolio) => (
+        <div className="relative flex mb-4" key={portfolio.slug}>
             <div className="card border border-gray-700 rounded-md">
                 <figure className="max-w-full border-b border-gray-700 overflow-hidden rounded-md">
                     <ImageToast
-                        image={portfolio.featured_media}
+                        image={portfolio.metaData.featuredImage}
                         classList="w-full"
                     />
                 </figure>
@@ -23,11 +21,11 @@ const PortfolioCard = async ({ page }: { page: number }) => {
                                 className="text-base text-neutral-300"
                                 href={'/portfolio/' + portfolio.slug}
                             >
-                                {portfolio.acf.name}
+                                {portfolio.metaData.title}
                             </Link>
                         </h4>
                         <p className="text-xs text-gray-500 ">
-                            {portfolio.acf.description}
+                            {portfolio.metaData.description}
                         </p>
                     </div>
                 </div>

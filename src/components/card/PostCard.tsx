@@ -1,33 +1,34 @@
 import React from 'react'
 import Link from 'next/link'
-import ImageToast from '../toast/ImageToast'
-import { wpposts } from '@/src/utils/posts'
-import { reduceWords } from '@/src/utils/string'
+import { blurImageData, reduceWords } from '@/src/utils/string'
+import { Post } from '@/src/utils/types'
+import Image from 'next/image'
 
-const PostCard = async ({ page }: { page: number }) => {
-    const req = await wpposts(page)
-    const posts = await req.json()
-    return posts.map((post: any) => {
+const PostCard = async ({ posts }: { posts: Post[] }) => {
+    return posts.map((post) => {
         return (
-            <div className="relative flex mb-4 overflow-hidden" key={post.id}>
+            <div className="relative flex mb-4 overflow-hidden" key={post.slug}>
                 <div className="border dark:border-gray-700 rounded-md shadow-xl overflow-hidden">
                     <figure className="max-w-full">
-                        <ImageToast image={post.featured_media} />
+                        <Image
+                            className={'!relative aspect-video w-full '}
+                            src={post.metaData.featuredImage ?? ''}
+                            blurDataURL={blurImageData}
+                            height={250}
+                            width={300}
+                            alt={post.metaData.title}
+                        />
                     </figure>
                     <div className="bg-ghost-white dark:bg-card-dark p-3 space-y-3">
                         <Link
                             className="text-lg text-neutral-300"
                             href={'/posts/' + post.slug}
                         >
-                            {post.title.rendered &&
-                                reduceWords(post.title.rendered.toString(), 34)}
+                            {reduceWords(post.metaData.title, 34)}
                         </Link>
-                        <div
-                            className="text-sm text-gray-400"
-                            dangerouslySetInnerHTML={{
-                                __html: reduceWords(post.excerpt.rendered, 100),
-                            }}
-                        ></div>
+                        <p className="text-sm text-gray-400">
+                            {reduceWords(post.metaData.description, 100)}
+                        </p>
                     </div>
                 </div>
             </div>

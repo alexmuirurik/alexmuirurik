@@ -1,39 +1,31 @@
-export interface post {
-    id: React.Key | null | undefined
-    featured_media: any
-    slug: string
-    title: {
-        rendered:
-            | string
-            | number
-            | boolean
-            | React.ReactElement<any, string | React.JSXElementConstructor<any>>
-            | Iterable<React.ReactNode>
-            | React.ReactPortal
-            | any
-            | null
-            | undefined
-    }
-    excerpt: { rendered: string }
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import { MetaData } from './types'
+
+const getMDXFiles = (dir: fs.PathLike) => {
+    return fs.readdirSync(dir).filter((file) => path.extname(file) === '.md')
 }
 
-export const wpposts = async (page: number) => {
-    const req = await fetch(
-        'http://good.alexmuiruri.com/wp-json/wp/v2/posts?per_page=12&page=' +
-            page,
-        {
-            cache: 'no-cache',
-        }
-    )
-    return req
+const readMDXFile = (filePath: fs.PathOrFileDescriptor) => {
+    let rawContent = fs.readFileSync(filePath).toString()
+    return matter(rawContent)
 }
 
-export const singlepost = async (slug: string) => {
-    const req = await fetch(
-        'http://good.alexmuiruri.com/wp-json/wp/v2/posts?slug=' + slug,
-        {
-            cache: 'no-cache',
+const getMDXData = (dir: any) => {
+    let mdxFiles = getMDXFiles(dir)
+    return mdxFiles.map((file) => {
+        let { data, content } = readMDXFile(path.join(dir, file))
+        let slug = path.basename(file, path.extname(file))
+
+        return {
+            metaData: data as MetaData,
+            slug: slug,
+            content: content,
         }
-    )
-    return req
+    })
+}
+
+export const getPosts = (posts: 'posts' | 'portfolio') => {
+    return getMDXData(path.join(process.cwd(), 'src', 'content', posts))
 }

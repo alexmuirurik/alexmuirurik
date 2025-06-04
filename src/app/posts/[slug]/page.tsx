@@ -1,24 +1,26 @@
 import React from 'react'
 import SinglePostCard from '@/src/components/card/SinglePostCard'
 import PostCard from '@/src/components/card/PostCard'
-import { singlepost } from '@/src/utils/posts'
+import { getPosts } from '@/src/utils/posts'
+import { notFound } from 'next/navigation'
 
-const page = async ({params, searchParams}: {params: {slug: string}, searchParams?: { [key: string]: string | string[] | undefined } }) => {
-	const pgs = (searchParams?.page) ? Number(searchParams?.page) : 1 
-	const req	= await singlepost(params.slug)
-	const post	= await req.json()
-	return (
-		<div className="main-wrapper container-fluid min-h-svh">
-			<div className="row">
-				<div className="col md:w-9/12 ps-0">
-					{ (post[0]) && <SinglePostCard post={post[0]} />}
-				</div>
-				<div className="col md:w-3/12 md:pe-0">
-					<PostCard page={pgs} />
-				</div>
-			</div>
-		</div>
-	)
+const page = async ({ params }: { params: { slug: string } }) => {
+    const posts = getPosts('posts')
+    const singlePost = posts.find((post) => post.slug === params.slug)
+    if (!singlePost) return notFound()
+
+    return (
+        <div className="main-wrapper container-fluid min-h-svh">
+            <div className="row">
+                <div className="col md:w-9/12 ps-0">
+                    <SinglePostCard post={singlePost} />
+                </div>
+                <div className="col md:w-3/12 md:pe-0">
+                    <PostCard posts={posts} />
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default page
