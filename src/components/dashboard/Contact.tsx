@@ -17,9 +17,9 @@ const Contact = () => {
                                     </span>
                                 </div>
                                 <div className="description-section md:w-4/6 lg:w-5/6">
-                                    <h3 className="work-title text-xl">
+                                    <h3 className="work-title text-xl border-b-0">
                                         Full Stack Javascript Developer
-                                        <small className="text-xs text-[#6c757d]">
+                                        <small className="text-xs text-[#6c757d] ms-2">
                                             Sep 2, 2023
                                         </small>
                                         <span className="text-xs text-[#6c757d]">
@@ -47,9 +47,9 @@ const Contact = () => {
                                     </span>
                                 </div>
                                 <div className="description-section md:w-4/6 lg:w-5/6">
-                                    <h3 className="work-title text-xl">
+                                    <h3 className="work-title text-xl border-b-0">
                                         Freelance Casino Writer
-                                        <small className="text-xs text-[#6c757d]">
+                                        <small className="text-xs text-[#6c757d] ms-2">
                                             Jan 9, 2023
                                         </small>
                                         <span className="text-xs text-[#6c757d]">

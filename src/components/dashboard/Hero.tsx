@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="container flex justify-center !p-8 mb-8">
                 <div className="flex flex-col items-center sm:w-full lg:w-9/12 z-10">
                     <div className="flex flex-col justify-center items-center gap-6">
-                        <h5 className=" font-extrabold text-cyan-300">
+                        <h5 className=" font-extrabold text-cyan-300 border-b-0">
                             <span className="text-sm md:text-lg lg:text-xl xl:text-2xl font-thin uppercase">
                                 Welcome to my Portfolio Site
                             </span>
@@ -27,7 +27,7 @@ const Hero = () => {
                         <h3
                             className={
                                 pacifico.className +
-                                ' text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-bold font-nunito'
+                                ' text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-bold font-nunito border-b-0'
                             }
                         >
                             <span className="text-purple-100">

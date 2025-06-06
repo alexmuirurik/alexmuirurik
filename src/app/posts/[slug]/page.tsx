@@ -11,11 +11,11 @@ const page = async ({ params }: { params: { slug: string } }) => {
 
     return (
         <div className="main-wrapper container-fluid min-h-svh">
-            <div className="row">
-                <div className="col md:w-9/12 ps-0">
+            <div className="flex gap-4 mt-4">
+                <div className="md:w-9/12 ps-0">
                     <SinglePostCard post={singlePost} />
                 </div>
-                <div className="col md:w-3/12 md:pe-0">
+                <div className="md:w-3/12 md:pe-0">
                     <PostCard posts={posts} />
                 </div>
             </div>

@@ -19,9 +19,9 @@ const PostCard = async ({ posts }: { posts: Post[] }) => {
                             alt={post.metaData.title}
                         />
                     </figure>
-                    <div className="bg-ghost-white dark:bg-card-dark p-3 space-y-3">
+                    <div className="bg-ghost-white dark:bg-card-dark p-3 space-y-2">
                         <Link
-                            className="text-lg text-neutral-300"
+                            className="text-neutral-300"
                             href={'/posts/' + post.slug}
                         >
                             {reduceWords(post.metaData.title, 34)}

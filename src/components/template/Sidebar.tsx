@@ -39,12 +39,12 @@ const Sidebar = () => {
                         <h1
                             className={
                                 pacifico.className +
-                                ' mt-3 text-2xl font-[bold_!important] cursor-pointer'
+                                ' mt-3 text-2xl font-[bold_!important] cursor-pointer border-b-0'
                             }
                         >
                             <Link href="/">Alex Muiruri</Link>
                         </h1>
-                        <h4 className="text-[cadetblue] text-xs mt-0.5 font-bold cursor-pointer">
+                        <h4 className="text-[cadetblue] text-xs mt-0.5 font-bold cursor-pointer border-b-0">
                             <Link href="/">Full-Stack Web Developer</Link>
                         </h4>
                         <div className="social-links flex gap-3 mt-3">
