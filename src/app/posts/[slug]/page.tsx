@@ -11,8 +11,8 @@ const page = async ({ params }: { params: { slug: string } }) => {
 
     return (
         <div className="main-wrapper container-fluid min-h-svh">
-            <div className="flex gap-4 mt-4">
-                <div className="md:w-9/12 ps-0">
+            <div className="md:flex gap-4 mt-4">
+                <div className="md:w-9/12 ps-0 mb-4">
                     <SinglePostCard post={singlePost} />
                 </div>
                 <div className="md:w-3/12 md:pe-0">

@@ -7,7 +7,7 @@ import Sidebar from '@/src/components/template/Sidebar'
 import { SidebarContextProvider } from '@/src/context/usesidebar'
 import './globals.css'
 
-const nunito = Nunito({ subsets: ['latin'] })
+const nunito = Nunito({ subsets: ['cyrillic'] })
 
 export const metadata: Metadata = {
     title: 'My Resume | Alex Muiruri - https://alexmuiruri.com',
@@ -29,7 +29,10 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                 <NextTopLoader height={1} />
                 <SidebarContextProvider>
                     <Sidebar />
-                    <main className="main relative w-full lg:w-[calc(100%_-_13rem)] px-2 lg:left-48 bottom-0">
+                    <main
+                        id="main"
+                        className="main relative w-full lg:w-[calc(100%_-_13rem)] px-2 lg:left-48 bottom-0"
+                    >
                         <Navbar />
                         {children}
 

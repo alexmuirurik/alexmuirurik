@@ -100,6 +100,15 @@
     p {
         @apply mb-3;
     }
+
+    .entry-content .content-wrapper ul li{
+        @apply py-2 list-[disclosure-closed] list-inside
+    }
+
+    .entry-content .content-wrapper ol li{
+        @apply py-2 list-decimal list-inside
+    }
+
 }
 
 @layer components {

@@ -52,7 +52,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="theme-mode ms-auto">
+                <div className="flex items-center gap-2 ms-auto">
                     <ThemeMode />
                     <SidebarMini />
                 </div>

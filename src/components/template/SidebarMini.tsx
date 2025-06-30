@@ -1,12 +1,24 @@
 'use client'
-import React, { useState } from 'react'
 import { useSidebarContext } from '@/src/context/usesidebar'
 import Link from 'next/link'
+import { useEffect } from 'react'
 import {} from 'react-icons'
-import { FaBarcode, FaBars } from 'react-icons/fa'
+import { FaIndent, FaOutdent } from 'react-icons/fa'
 
 const SidebarMini = () => {
     const { hidden, setHidden } = useSidebarContext()
+
+    useEffect(() => {
+        const main = document.getElementById('main')
+        if (main) {
+            const eventlistener = main.addEventListener('click', () => {
+                setHidden(true)
+            })
+            return main.removeEventListener('click', () => {
+                setHidden(true)
+            })
+        }
+    }, [])
 
     return (
         <Link
@@ -15,9 +27,9 @@ const SidebarMini = () => {
             onClick={() => setHidden(!hidden)}
         >
             {hidden ? (
-                <FaBarcode className="pt-4 px-2 text-xl" />
+                <FaOutdent className="text-xl h-6 w-6" />
             ) : (
-                <FaBars className="pt-4 px-2 text-xl" />
+                <FaIndent className="text-xl h-6 w-6" />
             )}
         </Link>
     )

@@ -7,8 +7,8 @@ import Image from 'next/image'
 const PostCard = async ({ posts }: { posts: Post[] }) => {
     return posts.map((post) => {
         return (
-            <div className="relative flex mb-4 overflow-hidden" key={post.slug}>
-                <div className="border dark:border-gray-700 rounded-md shadow-xl overflow-hidden">
+            <div className="relative flex mb-4 overflow-hidden w-full" key={post.slug}>
+                <div className="border dark:border-gray-700 rounded-md shadow-xl overflow-hidden w-full">
                     <figure className="max-w-full">
                         <Image
                             className={'!relative aspect-video w-full '}

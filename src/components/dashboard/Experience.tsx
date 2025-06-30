@@ -10,14 +10,14 @@ const Experience = () => {
                 <div className="md:flex md:columns-2 gap-4">
                     <div className="bg-ghost-white dark:bg-card-dark rounded-md w-full md:w-8/12 lg:w-9/12 p-6 mb-4 md:mb-0">
                         <h2 className="card-title text-md mb-4">Experience:</h2>
-                        <div className="card">
-                            <div className="work flex mb-4">
+                        <div className="card space-y-4">
+                            <div className="work flex gap-2">
                                 <div className="image-section w-2/6 md:w-1/6 border-l dark:border-gray-700 ps-4 pe-4">
                                     <span className="text-xs text-[#6c757d] [writing-mode:vertical-lr] lg:[writing-mode:unset]">
                                         NetraScale
                                     </span>
                                 </div>
-                                <div className="description-section md:w-4/6 lg:w-5/6">
+                                <div className="description-section">
                                     <h3 className="work-title text-xl border-b-0">
                                         Full Stack Javascript Developer{' '}
                                         <small className="text-xs text-[#6c757d]">
@@ -41,13 +41,13 @@ const Experience = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="work flex mb-4">
+                            <div className="work flex gap-2">
                                 <div className="image-section w-2/6 md:w-1/6 border-l dark:border-gray-700 ps-4 pe-4">
                                     <span className="text-xs text-[#6c757d] [writing-mode:vertical-lr] lg:[writing-mode:unset]">
                                         StickyEyes
                                     </span>
                                 </div>
-                                <div className="description-section md:w-4/6 lg:w-5/6">
+                                <div className="description-section">
                                     <h3 className="work-title text-xl border-b-0">
                                         Freelance Casino Writer{' '}
                                         <small className="text-xs text-[#6c757d]">

@@ -2,7 +2,7 @@ import { Pacifico } from 'next/font/google'
 import Link from 'next/link'
 import React from 'react'
 
-const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] })
+const pacifico = Pacifico({ subsets: ['cyrillic'], weight: ['400'] })
 const Hero = () => {
     const date = new Date()
     const bg = `data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='100' height='100' fill='none' stroke='rgb(0 0 0 / 0.2)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e`
@@ -30,11 +30,11 @@ const Hero = () => {
                                 ' text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-bold font-nunito border-b-0'
                             }
                         >
-                            <span className="text-purple-100">
+                            <span className="text-purple-100 text-nowrap">
                                 I&apos;m Alex Muiruri
                             </span>
                         </h3>
-                        <p className="text-center mt-5">
+                        <p className="hidden xs:block text-xs xs:text-sm sm:text-base text-center mt-5">
                             A full-stack web and mobile developer with{' '}
                             {experience.coding} years of coding experience.
                             I&apos;ll help you create React Native, Android,
@@ -42,19 +42,23 @@ const Hero = () => {
                             Vercel, or Azure.
                         </p>
                     </div>
-                    <div className="btns flex justify-between mt-8 w-full md:w-4/5 xl:w-3/5">
+                    <div className="btns flex justify-between mt-8 w-full gap-2 md:w-4/5 xl:w-3/5">
                         <Link
-                            className="bg-teal-600 hover:bg-teal-500 px-4 py-2 border border-teal-600 rounded-lg"
+                            className="bg-teal-600 hover:bg-teal-500 px-2 sm:px-4 py-2 border border-teal-600 rounded-lg"
                             href="/portfolio"
                         >
-                            View My Portfolio
+                            <span className="text-xs sm:text-sm text-nowrap">
+                                View My Portfolio
+                            </span>
                         </Link>
                         <Link
-                            className="bg-purple-600 hover:bg-purple-500 px-4 py-2 border border-teal-600 rounded-lg"
+                            className="bg-purple-600 hover:bg-purple-500 px-2 smpx-4 py-2 border border-teal-600 rounded-lg"
                             href="/assets/doc/Resume-Alex-Muiruri-1.pdf"
                             target="_blank"
                         >
-                            Download CV
+                            <span className="text-xs sm:text-sm text-wrap">
+                                Download CV
+                            </span>
                         </Link>
                     </div>
                 </div>

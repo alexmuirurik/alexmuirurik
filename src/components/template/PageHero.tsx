@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageHero = ({ pagename }: any) => {
     return (
-        <section className="hero p-0 h-28 mb-4 " id="hero">
+        <section className="hero p-0 h-28 mb-3" id="hero">
             <div className="h-full px-0">
                 <div
                     className="bg-fixed bg-cover flex justify-center items-center mix-blend-exclusion dark:mix-blend-normal h-full"

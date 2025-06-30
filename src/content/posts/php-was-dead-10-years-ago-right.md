@@ -14,7 +14,7 @@ To be fair, that number is declining, but not at an exponential rate as develope
 
 ## **Background on PHP**
 
-![](https://resume.alexmuiruri.com/wp-content/uploads/2023/08/pexels-pixabay-276452-1024x546.jpg)
+![developers](https://good.alexmuiruri.com/wp-content/uploads/2023/08/pexels-pixabay-276452-1024x546.jpg)
 
 Before we delve into why many developers lost their confidence in PHP,  let's look at the history of PHP and how it became so popular. 
 
@@ -42,17 +42,17 @@ Second, creating a website was straightforward and required minimal coding knowl
 
 PHP became popular in the web development realm for several key reasons:
 
-* *   **Ease of Use**: PHP's syntax was easy to understand. The language also offered a low learning curve compared to other languages, which also contributed to its widespread adoption.
-* *   **Open Source Community & Support**: The open-source community was an invaluable asset for PHP developers. It allowed developers to collaborate on projects and come up with innovative solutions. There were also many tutorials and support documentation available online.
-* *   **Compatibility with Web Services & Databases**: PHP was compatible with most web services and databases such as MySQL and PostgreSQL. This made it a great choice for developers wanting to create dynamic websites quickly without having to worry about compatibility issues.
-* *   **Integration with HTML**: PHP could be embedded directly into HTML code, eliminating the need for separate CGI files. It was compatible with most servers and databases, offering a versatile solution for web development across different platforms.
-* *   **Community Support**: PHP had a robust community of developers who continuously contributed to its development and improvement. The availability of numerous libraries and tools further facilitated its use.
-* *   **Frameworks**: The advent of PHP frameworks like Joomla, Laravel, and WordPress simplified the development process, making it easier to build robust web applications.
-* *   **Performance**: PHP required little server requirements compared to other languages. With the introduction of the Zend Engine, PHP's performance significantly improved, making it a reliable choice for web development projects.
+* **Ease of Use**: PHP's syntax was easy to understand. The language also offered a low learning curve compared to other languages, which also contributed to its widespread adoption.
+* **Open Source Community & Support**: The open-source community was an invaluable asset for PHP developers. It allowed developers to collaborate on projects and come up with innovative solutions. There were also many tutorials and support documentation available online.
+* **Compatibility with Web Services & Databases**: PHP was compatible with most web services and databases such as MySQL and PostgreSQL. This made it a great choice for developers wanting to create dynamic websites quickly without having to worry about compatibility issues.
+* **Integration with HTML**: PHP could be embedded directly into HTML code, eliminating the need for separate CGI files. It was compatible with most servers and databases, offering a versatile solution for web development across different platforms.
+* **Community Support**: PHP had a robust community of developers who continuously contributed to its development and improvement. The availability of numerous libraries and tools further facilitated its use.
+* **Frameworks**: The advent of PHP frameworks like Joomla, Laravel, and WordPress simplified the development process, making it easier to build robust web applications.
+* **Performance**: PHP required little server requirements compared to other languages. With the introduction of the Zend Engine, PHP's performance significantly improved, making it a reliable choice for web development projects.
 
 ## **PHP Decline in Popularity**
 
-![](https://resume.alexmuiruri.com/wp-content/uploads/2023/08/pexels-pixabay-270557-1024x682.jpg)
+![popularity](https://good.alexmuiruri.com/wp-content/uploads/2023/08/pexels-pixabay-270557-1024x682.jpg)
 
 Despite its popularity, PHP's decline was inevitable. The rise of alternative technologies led to a gradual decline in the popularity of PHP over the years. The language was criticized for its lack of scalability and security, making it unsuitable for complex web development projects.
 
@@ -90,7 +90,7 @@ The introduction of open-source platforms such as WordPress and Joomla also led 
 
 ## **PHP's Revival**
 
-![](https://resume.alexmuiruri.com/wp-content/uploads/2023/08/pexels-cottonbro-4709285-1024x682.jpg)
+![Revival](https://good.alexmuiruri.com/wp-content/uploads/2023/08/pexels-cottonbro-4709285-1024x682.jpg)
 
 Fortunately, the PHP community did not give up on the language. They continued to improve and refine it to meet the demands of modern web development. In 2015, PHP 7 was released with upgraded features like reduced memory usage, improved security, and enhanced reliability.
 
@@ -99,8 +99,6 @@ This version included new language features such as scalar type declarations and
 The introduction of modern PHP frameworks like Laravel and Symfony further revitalized the language. These frameworks provided developers with a set of tools and libraries for quickly building web applications without having to start from scratch.
 
 ## **Current State of PHP**
-
-![](https://alexmuiruri.com/wp-content/uploads/2023/08/Laravel-framework-shares.png)
 
 Today, PHP's usage is higher than ever before. According to the latest statistics, over 80% of websites are built using server-side scripting languages like JavaScript, Python, and PHP.
 
@@ -119,77 +117,3 @@ The past 10 years have been an interesting journey for PHP – from being on the
 In short, PHP isn't dead yet – far from it! It is continuing to grow and evolve with each new version. As a result, developers can be confident that they'll continue to have a powerful programming language to use in their projects.
 
 So, if you're looking for a reliable language to build your next web application with, look no further than PHP! There's certainly no better choice out there. It's time to get coding!
-
-![Shoes](https://alexmuiruri.com/_next/image?url=https%3A%2F%2Fgood.alexmuiruri.com%2Fwp-content%2Fuploads%2F2024%2F11%2Fpexels-antonio-batinic-2573434-4164418-1-768x512.jpg&w=3840&q=75)
-
-[How React Render and Commit Works](https://alexmuiruri.com/posts/how-react-render-and-commit-works)
-
-React is a JavaScript library that creates user interfaces by separating the design into individu...
-
-![Shoes](https://alexmuiruri.com/_next/image?url=https%3A%2F%2Fgood.alexmuiruri.com%2Fwp-content%2Fuploads%2F2023%2F08%2Fpexels-realtoughcandycom-11035390-768x512.jpg&w=3840&q=75)
-
-[PHP Was Dead 10 Years Ago, Right?](https://alexmuiruri.com/posts/php-was-dead-10-years-ago-right)
-
-Ten years ago, tech pundits predicted the demise of PHP in web development. They claimed that the...
-
-![Shoes](https://alexmuiruri.com/_next/image?url=https%3A%2F%2Fgood.alexmuiruri.com%2Fwp-content%2Fuploads%2F2023%2F03%2Fpexels-oleksandr-pidvalnyi-9822732-768x512.jpg&w=3840&q=75)
-
-[The importance of SEO in Digital M...](https://alexmuiruri.com/posts/the-importance-of-seo-in-digital-marketing)
-
-Digital marketing is a powerful tool modern businesses use to connect with their target audience,...
-
-![Shoes](https://alexmuiruri.com/_next/image?url=https%3A%2F%2Fgood.alexmuiruri.com%2Fwp-content%2Fuploads%2F2023%2F03%2Fdigitization-g97763f249_1280-768x512.jpg&w=3840&q=75)
-
-[Accelerate Your Business Growth th...](https://alexmuiruri.com/posts/accelerate-your-business-growth-through-digital-transformation-key-insights-from-janes-tech-company)
-
-Digital transformation is no longer optional for companies looking to accelerate their growth and...
-
-![Shoes](https://alexmuiruri.com/_next/image?url=https%3A%2F%2Fgood.alexmuiruri.com%2Fwp-content%2Fuploads%2F2023%2F02%2F1_bvfc4WbLY5HV00VMCndazQ-768x432.jpeg&w=3840&q=75)
-
-[How to Create a Custom Router Clas...](https://alexmuiruri.com/posts/create-your-own-router-class-in-php)
-
-Are you looking for a way to hide your .PHP extension from the URL and secure your app. This arti...
-
-![Shoes](https://alexmuiruri.com/_next/image?url=https%3A%2F%2Fgood.alexmuiruri.com%2Fwp-content%2Fuploads%2F2023%2F02%2Ftechnology-ga6a9634c2_1280-768x512.jpg&w=3840&q=75)
-
-[Cloud Computing Infrastructure: Ev...](https://alexmuiruri.com/posts/cloud-computing-infrastructure-everything-you-need-to-know)
-
-Cloud computing is renting a broad and complex infrastructure setup to provide cloud services and...
-
-![Shoes](https://alexmuiruri.com/_next/image?url=https%3A%2F%2Fgood.alexmuiruri.com%2Fwp-content%2Fuploads%2F2023%2F02%2Fpexels-markus-spiske-330771-768x512.jpg&w=3840&q=75)
-
-[Node Js vs JavaScript](https://alexmuiruri.com/posts/node-js-vs-javascript) 
-
-We think of JavaScript when designing a dynamic and interactive website and Node Js for backend d...
-
-![Shoes](https://alexmuiruri.com/_next/image?url=https%3A%2F%2Fgood.alexmuiruri.com%2Fwp-content%2Fuploads%2F2023%2F01%2Fcloud-storage-banner-background-remixed-from-public-domain-by-nasa-1-768x512.jpg&w=3840&q=75)
-
-[What is the best OS for Web Server...](https://alexmuiruri.com/posts/what-is-the-best-os-for-web-servers)
-
-The foundational software on your web server is an Operating System (OS.) Linux is the most ...
-
-![Shoes](https://alexmuiruri.com/_next/image?url=https%3A%2F%2Fgood.alexmuiruri.com%2Fwp-content%2Fuploads%2F2022%2F11%2FPrp-hand-rejuvenation-ama-regenerative-medicine-768x432.jpg&w=3840&q=75)
-
-[Learn Why the 68-Year-Old Platelet...](https://alexmuiruri.com/posts/learn-why-the-68-year-old-platelet-rich-plasma-treatment-is-gaining-such-great-media-attention-today)
-
-You might know about platelets and how they merge with damaged blood vessels to stop bleeding and...
-
-![Shoes](https://alexmuiruri.com/_next/image?url=https%3A%2F%2Fgood.alexmuiruri.com%2Fwp-content%2Fuploads%2F2023%2F02%2Fpexels-julia-m-cameron-4144293-768x512.jpg&w=3840&q=75)
-
-[8 Reasons Why Virtual Reality Simu...](https://alexmuiruri.com/posts/8-reasons-why-virtual-reality-simulations-is-the-best-training-tool-for-healthcare-professionals)
-
-The only limit to how healthcare professionals can use VR is their creativity. Here, we believe t...
-
-![Shoes](https://alexmuiruri.com/_next/image?url=https%3A%2F%2Fgood.alexmuiruri.com%2Fwp-content%2Fuploads%2F2023%2F02%2Fpexels-mikhail-nilov-7534804-768x512.jpg&w=3840&q=75)
-
-[Text Message Scams Targeting Denti...](https://alexmuiruri.com/posts/3760)
-
-Fake text messages from scammers pretending to be local banks and institutions account for the la...
-
-![Shoes](https://alexmuiruri.com/_next/image?url=https%3A%2F%2Fgood.alexmuiruri.com%2Fwp-content%2Fuploads%2F2021%2F10%2Fcloud-g850975388_1920-1-768x512.jpg&w=3840&q=75)
-
-[Difference Between Cloud Storage a...](https://alexmuiruri.com/posts/how-are-cloud-storage-and-cloud-computing-different)
-
-Cloud technology service providers rarely spell out the terminology they use. You might find comp...
-
-  

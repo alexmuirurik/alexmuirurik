@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation'
 import { useSidebarContext } from '@/src/context/usesidebar'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
-const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] })
+const pacifico = Pacifico({ subsets: ['cyrillic'], weight: ['400'] })
 const Sidebar = () => {
     const { hidden } = useSidebarContext()
     const navigate = useRouter()
