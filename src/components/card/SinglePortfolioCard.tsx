@@ -1,33 +1,46 @@
-import React from 'react';
-import ImageToast from '../toast/ImageToast';
+'use client'
+import { Post } from '@/src/utils/types'
+import ReactMarkDown from 'react-markdown'
+import { Avatar, AvatarImage } from '../ui/avatar'
+import { FaEye } from 'react-icons/fa'
+import Image from 'next/image'
 
-const SinglePortfolioCard = ({portfolio}: {portfolio: any}) => {
+const SinglePortfolioCard = ({ portfolio }: { portfolio: Post }) => {
+    const minutes = portfolio.content.split(' ').length / 200
     return (
-        <div className="entry-content bg-black rounded-md pb-3">
-            <div className="post-image rounded-md overflow-hidden">
-                <ImageToast image={portfolio.featured_media} classList='w-full' />
-            </div>
-            <div className="content-wrapper rounded-md bg-ghost-white dark:bg-card-dark mx-1 px-2">
-                <h2 className="pt-3 text-2xl font-bold mb-0">{portfolio.title.rendered}</h2>
-                <ul className="list-disc p-3 px-4 space-y-1">
-                    <li>
-                        <span className='font-bold'>Portfolio Link: </span>
-                        <a className='text-teal-500 ' target='_blank' href={portfolio.acf.portfolio_link}>
-                            {portfolio.acf.portfolio_link}
-                        </a>
-                    </li>
-                    <li>
-                        <span className='font-bold'>GitHub Link: </span>
-                        <a className='text-teal-500' target='_blank' href={portfolio.acf.github_link}>
-                            {portfolio.acf.github_link ?? 'Contact Me For the Source Code'}
-                        </a>
-                    </li>
-                </ul>
-                <div className="content px-3" dangerouslySetInnerHTML={{ __html: portfolio.content.rendered }}>
+        <div className="entry-content bg-black rounded-md p-px">
+            <div className="content-wrapper rounded-md bg-ghost-white dark:bg-card-dark m-1 p-6">
+                <h2 className="text-4xl font-bold border-b-0">
+                    {portfolio.metaData.title}
+                </h2>
+                <div className="flex items-center gap-2 pt-2 pb-4">
+                    <Avatar className="h-6 w-6">
+                        <AvatarImage src="/img/home/alexmuiruri.jpg" />
+                    </Avatar>
+                    <div className="flex items-center gap-1">
+                        <span className="text-sm text-neutral-400">by</span>
+                        <span className="text-sm font-bold text-neutral-400">Alex Muiruri</span>
+                    </div>
+                    <div className="flex items-center gap-2 ms-2">
+                        <FaEye className="text-sm" />
+                        <span className=" text-neutral-400 text-sm">
+                            {minutes.toFixed(0)} minute Read
+                        </span>
+                    </div>
                 </div>
+                <div className="portfolio-image rounded-md overflow-hidden mb-4">
+                    <Image
+                        className="aspect-video rounded-lg w-full"
+                        src={portfolio.metaData.featuredImage as string}
+                        alt={portfolio.metaData.title}
+                        height={700}
+                        width={700}
+                    />
+                </div>
+                <ReactMarkDown>{portfolio.content}</ReactMarkDown>
             </div>
         </div>
-    );
+    )
 }
 
-export default SinglePortfolioCard;
+export default SinglePortfolioCard

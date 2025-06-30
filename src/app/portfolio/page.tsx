@@ -1,4 +1,3 @@
-import React from 'react'
 import PageHero from '@/src/components/template/PageHero'
 import PortfolioCard from '@/src/components/card/PortfolioCard'
 import Pagination from '@/src/components/card/Pagination'

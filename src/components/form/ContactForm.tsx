@@ -3,47 +3,50 @@ import React from 'react'
 const ContactForm = () => {
     return (
         <form
-            className="row m-0 p-0"
+            className="p-4 space-y-4"
             id="contactme-form"
             action="/contact-me"
             method="post"
         >
-            <div className="flex flex-col w-full md:w-1/3 flex-[0_0_auto] form-group mb-3">
-                <label className="form-label" htmlFor="name">
-                    Names
-                </label>
-                <input
-                    id="name"
-                    name="name"
-                    className="rounded-lg border border-neutral-300 text-black p-2 w-full mt-2 !outline-1 !outline-offset-0"
-                    placeholder="Type Your Name Here"
-                    required
-                />
+            <div className="grid lg:grid-cols-3 gap-4">
+                <div className="space-y-4">
+                    <label className="form-label" htmlFor="name">
+                        Names
+                    </label>
+                    <input
+                        id="name"
+                        name="name"
+                        className="rounded-lg border border-neutral-300 text-black p-2 w-full mt-2 !outline-1 !outline-offset-0"
+                        placeholder="Type Your Name Here"
+                        required
+                    />
+                </div>
+                <div className="space-y-4">
+                    <label className="form-label" htmlFor="email">
+                        Email
+                    </label>
+                    <input
+                        id="email"
+                        name="email"
+                        className="rounded-lg border border-neutral-300 text-black p-2 w-full mt-2 !outline-1 !outline-offset-0"
+                        placeholder="Enter Your Email Here"
+                        required
+                    />
+                </div>
+                <div className="space-y-4">
+                    <label className="form-label" htmlFor="website">
+                        Website
+                    </label>
+                    <input
+                        id="website"
+                        name="website"
+                        className="rounded-lg border border-neutral-300 text-black p-2 w-full mt-2 !outline-1 !outline-offset-0"
+                        placeholder="Enter Your Website Here"
+                        required
+                    />
+                </div>
             </div>
-            <div className="flex flex-col w-full md:w-1/3 flex-[0_0_auto] form-group mb-3">
-                <label className="form-label" htmlFor="email">
-                    Email
-                </label>
-                <input
-                    id="email"
-                    name="email"
-                    className="rounded-lg border border-neutral-300 text-black p-2 w-full mt-2 !outline-1 !outline-offset-0"
-                    placeholder="Enter Your Email Here"
-                    required
-                />
-            </div>
-            <div className="flex flex-col w-full md:w-1/3 flex-[0_0_auto] form-group mb-3">
-                <label className="form-label" htmlFor="website">
-                    Website
-                </label>
-                <input
-                    id="website"
-                    name="website"
-                    className="rounded-lg border border-neutral-300 text-black p-2 w-full mt-2 !outline-1 !outline-offset-0"
-                    placeholder="Enter Your Website Here"
-                    required
-                />
-            </div>
+
             <div className="flex flex-col form-group flex-1 mb-3">
                 <label className="form-label" htmlFor="content">
                     Email body

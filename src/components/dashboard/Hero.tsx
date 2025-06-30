@@ -13,7 +13,7 @@ const Hero = () => {
 
     return (
         <section
-            className=" dark:bg-[#0b2c5d] bg-[#cec6bd] hero items-start p-0 xl:items-center relative h-[90svh] md:h-[70svh] z-10 border dark:border-gray-700 rounded-b-md overflow-hidden"
+            className=" dark:bg-[#253348] bg-[#cec6bd] hero items-start p-0 xl:items-center relative h-[90svh] md:h-[70svh] z-10 border dark:border-gray-700 rounded-b-md overflow-hidden"
             id="hero"
         >
             <div className="container flex justify-center !p-8 mb-8">

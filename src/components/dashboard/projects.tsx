@@ -1,28 +1,27 @@
-import React from 'react'
-import Image from 'next/image'
 import ImageToast from '../toast/ImageToast'
 import Link from 'next/link'
 import { getPosts } from '@/src/utils/posts'
+import { Post } from '@/src/utils/types'
 
 const Projects = async () => {
-    const portfoli = getPosts('portfolio')
-    const RenderPortfolio = () =>
-        portfoli.slice(0, 3).map((portfolio: any, index: any) => {
+    const portfoli: Post[] = getPosts('portfolio')
+    const RenderPortfolio = () => {
+        return portfoli.slice(0, 4).map((portfolio) => {
             return (
                 <div
                     className="flex gap-2 border-t dark:border-gray-700 pt-4"
-                    key={portfolio.id}
+                    key={portfolio.slug}
                 >
                     <div className="side w-8 h-8 border border-gray-700 rounded-full p-1">
                         <ImageToast
                             classList="rounded-full"
-                            image={portfolio.featured_media}
+                            image={portfolio.metaData.featuredImage}
                         />
                     </div>
                     <div className="aside">
                         <h3 className="text-sm text-gray-300 font-bold mb-1">
                             <Link href={'/portfolio/' + portfolio.slug}>
-                                {portfolio.title.rendered}
+                                {portfolio.metaData.title}
                             </Link>
                         </h3>
                         <p className="text-sm text-gray-400">
@@ -34,6 +33,8 @@ const Projects = async () => {
                 </div>
             )
         })
+    }
+
     return (
         <div className="bg-ghost-white dark:bg-card-dark w-full md:w-4/12 lg:w-3/12 rounded-md py-6 px-4">
             <h2 className="card-title">Projects</h2>

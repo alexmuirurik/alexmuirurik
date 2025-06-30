@@ -39,15 +39,15 @@ const Sidebar = () => {
                         <h1
                             className={
                                 pacifico.className +
-                                ' mt-3 text-2xl font-[bold_!important] cursor-pointer border-b-0'
+                                ' mt-3 text-2xl font-[bold_!important] cursor-pointer border-b-0 my-0'
                             }
                         >
                             <Link href="/">Alex Muiruri</Link>
                         </h1>
-                        <h4 className="text-[cadetblue] text-xs mt-0.5 font-bold cursor-pointer border-b-0">
+                        <h4 className="text-[cadetblue] text-xs font-bold cursor-pointer border-b-0">
                             <Link href="/">Full-Stack Web Developer</Link>
                         </h4>
-                        <div className="social-links flex gap-3 mt-3">
+                        <div className="social-links flex gap-3">
                             <Link
                                 href="https://www.linkedin.com/in/alex-muiruri-writer/"
                                 target="_blank"
@@ -71,7 +71,7 @@ const Sidebar = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="sidebar-body">
+                    <div className="sidebar-body mt-2">
                         <ul className="menu">
                             {navbar.map((nav, i) => {
                                 const active = isActive(nav.url) ? 'active' : ''
@@ -81,7 +81,7 @@ const Sidebar = () => {
                                             href={nav.url}
                                             className={
                                                 active +
-                                                ' flex items-center py-3 px-5 !mb-2 !text-base'
+                                                ' hover:bg-card-dark [&.active]:bg-card-dark flex items-center px-8 p-4 !text-base'
                                             }
                                         >
                                             {nav.title}
