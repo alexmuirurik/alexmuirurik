@@ -6,6 +6,7 @@ import Navbar from '@/src/components/template/Navbar'
 import Sidebar from '@/src/components/template/Sidebar'
 import { SidebarContextProvider } from '@/src/context/usesidebar'
 import './globals.css'
+import { Toaster } from '../components/ui/sonner'
 
 const nunito = Nunito({ subsets: ['cyrillic'] })
 
@@ -39,6 +40,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                         <Footer />
                     </main>
                 </SidebarContextProvider>
+                <Toaster richColors expand />
             </body>
         </html>
     )

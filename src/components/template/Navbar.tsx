@@ -5,17 +5,16 @@ import React, { useState } from 'react'
 import ThemeMode from './ThemeMode'
 import ToastStart from '../toast/ToastStart'
 import SidebarMini from './SidebarMini'
+import { toast } from 'sonner'
 
 const Navbar = () => {
     const [message, setmessage] = useState('')
-    const copyEmail = (e: any) => {
+    const copyEmail = () => {
         navigator.clipboard.writeText('content@alexmuiruri.com')
-        setmessage('Email Copied')
-
-        return setTimeout(() => {
-            const toast = document.getElementById('toastStart')
-            return setmessage('')
-        }, 2000)
+        return toast.info('Email Copied', {
+            description: 'Email Copied Successfully',
+            
+        })
     }
     return (
         <nav className="sticky w-full top-0 bg-platinum-light dark:bg-rich-black z-30 lg:z-50">
@@ -57,7 +56,6 @@ const Navbar = () => {
                     <SidebarMini />
                 </div>
             </div>
-            {message && <ToastStart message={message} />}
         </nav>
     )
 }

@@ -8,7 +8,7 @@ import Image from 'next/image'
 const SinglePortfolioCard = ({ portfolio }: { portfolio: Post }) => {
     const minutes = portfolio.content.split(' ').length / 200
     return (
-        <div className="entry-content bg-black rounded-md p-px">
+        <div className="markdown-content bg-black rounded-md p-px">
             <div className="content-wrapper rounded-md bg-ghost-white dark:bg-card-dark m-1 p-6">
                 <h2 className="text-4xl font-bold border-b-0">
                     {portfolio.metaData.title}

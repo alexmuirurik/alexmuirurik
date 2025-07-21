@@ -26,6 +26,12 @@ const getMDXData = (dir: any) => {
     })
 }
 
-export const getPosts = (posts: 'posts' | 'portfolio') => {
+export const getPageContent = (page: string) => {
+    const filePath = path.join(process.cwd(), 'src', 'content', 'pages')
+    const { data, content } = readMDXFile(path.join(filePath, `${page}.md`))
+    return content
+}
+
+export const getPosts = (posts: 'posts' | 'portfolio' | 'pages') => {
     return getMDXData(path.join(process.cwd(), 'src', 'content', posts))
 }

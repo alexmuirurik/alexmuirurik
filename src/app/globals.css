@@ -101,6 +101,10 @@
         @apply mb-3;
     }
 
+    .markdown-content a{
+        @apply text-blue-500
+    }
+
     .entry-content .content-wrapper ul li {
         @apply py-2 list-[disclosure-closed] list-inside;
     }

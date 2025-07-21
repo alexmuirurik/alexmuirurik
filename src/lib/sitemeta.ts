@@ -27,7 +27,7 @@ export const siteMeta = {
         {
             employer: 'NetraScale',
             jobTitle: 'Full Stack Javascript Developer',
-            description: `I create a full-stack web application using React/NextJS, PostgreSQL, and ShadCN. I've also created APIs to support mobile payments etc...`,
+            description: `I created a full-stack web application using React/NextJS, PostgreSQL, and ShadCN. Worked on APIs to support mobile payments etc...`,
             start: 'Sep 2023',
             end: 'Dec 2024',
         },

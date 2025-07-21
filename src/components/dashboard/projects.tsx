@@ -24,10 +24,9 @@ const Projects = async () => {
                                 {portfolio.metaData.title}
                             </Link>
                         </h3>
-                        <p className="text-sm text-gray-400">
-                            <span>
-                                With: <small>React, TheMovieDB</small>
-                            </span>
+                        <p className="text-sm text-gray-400 space-x-1">
+                            <span>With:</span>
+                            <small>{portfolio.metaData.techStack}</small>
                         </p>
                     </div>
                 </div>

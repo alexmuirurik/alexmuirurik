@@ -1,5 +1,6 @@
 ---
 title: Point of Sale System
+techStack: NextJS, Daraja API
 description: Ten years ago, tech pundits predicted the demise of PHP in web development. They claimed that the rise of modern frameworks, like Ruby on Rails and Node.js, would render the programming language obsolete.
 featuredImage: /img/portfolio/pos-system.png
 updatedAt: 2021-08-22
