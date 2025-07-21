@@ -1,15 +1,10 @@
+import { siteMeta } from '@/src/lib/sitemeta'
 import { Pacifico } from 'next/font/google'
 import Link from 'next/link'
 import React from 'react'
 
 const pacifico = Pacifico({ subsets: ['cyrillic'], weight: ['400'] })
 const Hero = () => {
-    const date = new Date()
-    const bg = `data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='100' height='100' fill='none' stroke='rgb(0 0 0 / 0.2)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e`
-    const experience = {
-        writing: date.getFullYear() - 2018,
-        coding: date.getFullYear() - 2021,
-    }
 
     return (
         <section
@@ -21,7 +16,7 @@ const Hero = () => {
                     <div className="flex flex-col justify-center items-center gap-6">
                         <h5 className=" font-extrabold text-cyan-300 border-b-0">
                             <span className="text-sm md:text-lg lg:text-xl xl:text-2xl font-thin uppercase">
-                                Welcome to my Portfolio Site
+                                {siteMeta.title}
                             </span>
                         </h5>
                         <h3
@@ -31,15 +26,11 @@ const Hero = () => {
                             }
                         >
                             <span className="text-purple-100 text-nowrap">
-                                I&apos;m Alex Muiruri
+                                {siteMeta.nameField}
                             </span>
                         </h3>
                         <p className="hidden xs:block text-xs xs:text-sm sm:text-base text-center mt-5">
-                            A full-stack web and mobile developer with{' '}
-                            {experience.coding} years of coding experience.
-                            I&apos;ll help you create React Native, Android,
-                            front-end, and Nextjs apps and deploy them on AWS,
-                            Vercel, or Azure.
+                            {siteMeta.bio}
                         </p>
                     </div>
                     <div className="btns flex justify-between mt-8 w-full gap-2 md:w-4/5 xl:w-3/5">
@@ -77,20 +68,14 @@ const Hero = () => {
                         </h5>
                         <p className="text-xs">
                             <span className="font-bold">Jobs: </span>
-                            Technical Writer, Javascript Developer, NextJs
-                            Developer, Laravel Developer and Full Stack System
-                            Developer
+                            {siteMeta.jobs}
                         </p>
                     </div>
                     <div className="md:w-1/2 rounded-md bg-ghost-white dark:bg-card-dark p-4 mt-4 md:mt-0">
                         <h5 className="text-sm text-emerald-600 font-bold mb-1">
                             Skills Earned
                         </h5>
-                        <p className="text-xs">
-                            Documentation Writing, React, NextJs, NuxtJs, Vue,
-                            PHP, Laravel, Jquery, MySQL, PostgreSQL, MongoDB,
-                            APIs, and OAuth
-                        </p>
+                        <p className="text-xs">{siteMeta.skills}</p>
                     </div>
                 </div>
             </div>
