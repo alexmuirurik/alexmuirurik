@@ -56,7 +56,7 @@ const Sidebar = () => {
                                 <FaLinkedin />
                             </Link>
                             <Link
-                                href="https://github.com/alexmuirurik?tab=overview&from=2023-12-01&to=2023-12-31"
+                                href="https://github.com/alexmuirurik/alexmuirurik"
                                 target="_blank"
                                 className="inline-flex items-center justify-center bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs"
                             >
