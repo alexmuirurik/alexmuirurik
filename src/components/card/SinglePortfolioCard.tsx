@@ -1,4 +1,3 @@
-'use client'
 import { Post } from '@/src/utils/types'
 import ReactMarkDown from 'react-markdown'
 import { Avatar, AvatarImage } from '../ui/avatar'

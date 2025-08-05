@@ -105,12 +105,21 @@
         @apply text-blue-500
     }
 
-    .entry-content .content-wrapper ul li {
-        @apply py-2 list-[disclosure-closed] list-inside;
+    .markdown-content a:hover {
+        @apply text-blue-700;
+    }
+    
+    .markdown-content ul,
+    .markdown-content ol {
+        @apply my-3;
     }
 
-    .entry-content .content-wrapper ol li {
-        @apply py-2 list-decimal list-inside;
+    .markdown-content ul li {
+        @apply ps-2 list-disc list-inside;
+    }
+
+    .markdown-content ol li {
+        @apply ps-2 list-decimal list-inside;
     }
 
     pre{

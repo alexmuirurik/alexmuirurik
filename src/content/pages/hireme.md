@@ -1,19 +1,25 @@
----
+If you're wondering how to get started working together, here's a clear breakdown of the process I follow for software development and technical writing projects:
 
----
+## 1. Discovery & Initial Contact
+   
+Send an email to content@alexmuiruri.com with your project idea, goals, or request for a paid test project. I'll review your message and get back to you to schedule a discovery call.
 
-Wondering how to get started? Here's a simple breakdown of the onboarding process:
+During this call, we'll discuss your business objectives and technical requirements, clarify expectations and desired outcomes,and identify whether you need software development, technical writing, or both.
 
-## Discovery Call
+## 2. Proposal & Agreement
+   
+After our conversation, I'll send you a custom proposal that includes a clear breakdown of deliverables, timeline and development phases, and project cost and payment terms. 
 
-Send me an email at [content@alexmuiruri.com](mailto:content@alexmuiruri.com) with your project details, requirements, or to request a paid test project. This helps us align on your needs right from the start. After your initial inquiry, we'll schedule a call to discuss your project in detail. This is your opportunity to share your vision and for me to ask questions that will help clarify the scope of work.
+Once approved, we'll formalize the agreement with a contract, and kick things off with a brief onboarding session. We'll also define: 
 
-## Proposal & Agreement
+- Communication channels (Slack, email, Trello, etc.)
+- Project tools (GitHub, Figma, Notion, etc.)
+- Milestones and checkpoints
 
-Based on our conversation, I'll provide a tailored proposal outlining the project scope, timeline, and budget. Once we agree on the terms, we'll formalize our partnership with a signed contract. We'll hold a kickoff meeting to establish communication channels, project milestones, and any tools we'll use throughout our collaboration.
+## 3. Development & Collaboration
+   
+Once the project starts, I'll begin working in sprints or structured phases. This typically includes planning and architecture (for software projects), development and iteration (with regular updates), and documentation and writing (for technical guides, tutorials, or system docs)
 
-## Development Phase
+You'll get progress updates, and I'll check in frequently for feedback to make sure we're moving in the right direction. After launch, I remain available for feedback, revisions, or ongoing support.
 
-I'll start working on your project, providing regular updates and seeking your feedback to ensure we stay aligned with your goals. Before launch, I'll conduct thorough testing to ensure everything works perfectly. We'll launch your project and monitor it closely to address any immediate needs.
-
-Looking forward to working together!
+Looking forward to building something great together!

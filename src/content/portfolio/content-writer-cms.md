@@ -1,5 +1,5 @@
 ---
-title: Content Writing CMS
+title: Writer CMS
 techStack: MongoDB, Google Docs
 description: Ten years ago, tech pundits predicted the demise of PHP in web development. They claimed that the rise of modern frameworks, like Ruby on Rails and Node.js, would render the programming language obsolete. 
 featuredImage: /img/portfolio/copyscribers.png

@@ -1,13 +1,17 @@
-Thanks for visiting my resume website. Read on to learn about my skills and services -- hopefully I'll help you eliminate that initial skeptism :)
+
+Thanks for visiting my resume website. I hope this site gives you a clear picture of my skills and services — and helps ease any initial skepticism. 🙂
 
 Hi there,
 
-I'm Alex Muiruri, a full-stack web developer. I specialize in creating Admin Dashboards and Content Management Systems. Think job boards, eCommerce shops, inventory management applications, and file management systems.
+I'm Alex Muiruri, a seasoned software engineer with a focus on mobile, web, and backend development. I primarily work with TypeScript, but I'm currently expanding skill-set by learning Rust and Go.
 
-I can work with an agile team to develop a system that meets your requirements or design an entire system from scratch. I'm well-versed in technologies like Laravel, React, NextJS, and Django and can build apps with basic to complex functionalities.
+I specialize in building robust systems — from admin dashboards and content management platforms to eCommerce applications, inventory systems, and custom mobile apps that solve real business problems.
 
-I can also help you build WordPress themes and plugins, craft UX/UI designs using JS and CSS, and create React-Native mobile applications. Contact me at [content@alexmuiruri.com](mailto:content@alexmuiruri.com) for custom web designs.
+Do you need a React Native mobile app, custom WordPress plugin, or a clean, functional UI/UX design? Whether it's collaborating with an agile team or architecting a solution from scratch, I've got you covered. 
 
-If you're just scrolling through my website, read some of my articles below and tell me what you think. Your views are important to me.
+📩 Let's talk: content@alexmuiruri.com
 
-Kind regards
+If you're just exploring, feel free to check out my latest projects — I'd love to hear your thoughts.
+
+Kind regards,\
+Alex

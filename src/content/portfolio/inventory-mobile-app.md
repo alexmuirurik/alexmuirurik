@@ -1,8 +1,8 @@
 ---
-title: Inventory Mobile App
+title: Inventory App
 techStack: Expo, SQLite
 description: Ten years ago, tech pundits predicted the demise of PHP in web development. They claimed that the rise of modern frameworks, like Ruby on Rails and Node.js, would render the programming language obsolete. 
-featuredImage: https://images.pexels.com/photos/11035390/pexels-photo-11035390.jpeg
+featuredImage: /img/home/inventory-app.jpeg
 updatedAt: 2021-08-22
 author: Bojack Horseman
 ---

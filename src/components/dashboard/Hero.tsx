@@ -5,10 +5,9 @@ import React from 'react'
 
 const pacifico = Pacifico({ subsets: ['cyrillic'], weight: ['400'] })
 const Hero = () => {
-
     return (
         <section
-            className=" dark:bg-[#253348] bg-[#cec6bd] hero items-start p-0 xl:items-center relative h-[90svh] md:h-[70svh] z-10 border dark:border-gray-700 rounded-b-md overflow-hidden"
+            className=" dark:bg-[#253348] bg-[#cec6bd] hero items-start p-0 xl:items-center relative h-[80svh] xs:h-[90svh] md:h-[70svh] z-10 border dark:border-gray-700 rounded-b-md overflow-hidden"
             id="hero"
         >
             <div className="container flex justify-center !p-8 mb-8">

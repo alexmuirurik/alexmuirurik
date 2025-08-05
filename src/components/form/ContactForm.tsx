@@ -1,13 +1,29 @@
-import React from 'react'
+'use client'
+import { FormEvent } from 'react'
+import { toast } from 'sonner'
+import { LoadingButton } from '../ui/loading-button'
+
+interface ContactForm {
+    name: string
+    email: string
+    website: string
+    content: string
+}
 
 const ContactForm = () => {
+    const handleSubmit = async (event: FormEvent) => {
+        event.preventDefault()
+        const data = event.target
+        console.log(data)
+    }
+
     return (
-        <form
-            className="p-4 space-y-4"
-            id="contactme-form"
-            action="/contact-me"
-            method="post"
-        >
+        <form className="p-4 space-y-4" onSubmit={handleSubmit}>
+            <input
+                type="hidden"
+                name="access_key"
+                value="1605b721791b4e1b8ef143fd62715908"
+            />
             <div className="grid lg:grid-cols-3 gap-4">
                 <div className="space-y-4">
                     <label className="form-label" htmlFor="name">
@@ -28,6 +44,7 @@ const ContactForm = () => {
                     <input
                         id="email"
                         name="email"
+                        type="email"
                         className="rounded-lg border border-neutral-300 text-black p-2 w-full mt-2 !outline-1 !outline-offset-0"
                         placeholder="Enter Your Email Here"
                         required
@@ -40,6 +57,7 @@ const ContactForm = () => {
                     <input
                         id="website"
                         name="website"
+                        type="url"
                         className="rounded-lg border border-neutral-300 text-black p-2 w-full mt-2 !outline-1 !outline-offset-0"
                         placeholder="Enter Your Website Here"
                         required
@@ -60,12 +78,13 @@ const ContactForm = () => {
                 ></textarea>
             </div>
             <div className="w-full flex-[0_0_auto] form-group text-end mb-4">
-                <button
+                <LoadingButton
                     type="submit"
                     className="bg-teal-600 hover:bg-teal-500 px-4 py-2 border border-teal-500 rounded-lg"
+                    loading={false}
                 >
                     Submit Email
-                </button>
+                </LoadingButton>
             </div>
         </form>
     )
