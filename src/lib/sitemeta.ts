@@ -1,4 +1,5 @@
 import { email, z } from 'zod'
+import { he } from 'zod/v4/locales'
 
 export const contactSchema = z.object({
     email: z.email(),
@@ -51,4 +52,10 @@ export const siteMeta = {
         'Freelance Content Writing',
         'WordPress Development',
     ],
+    heroImage: '/img/home/bg-hero.jpg',
+    social: {
+        github: 'https://github.com/alexmuiruri',
+        twitter: 'https://twitter.com/alexmuirurik',
+        linkedin: 'https://linkedin.com/in/alex-muiruri-writer',
+    }
 }

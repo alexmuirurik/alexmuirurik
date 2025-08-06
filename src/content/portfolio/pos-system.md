@@ -1,7 +1,7 @@
 ---
 title: Inventory CMS
 techStack: NextJS, Daraja API
-description: Ten years ago, tech pundits predicted the demise of PHP in web development. They claimed that the rise of modern frameworks, like Ruby on Rails and Node.js, would render the programming language obsolete.
+description: The Inventory CMS is a web application built with NextJS for users to manage stock, track inventory levels, and update product data using a separate backend database. 
 featuredImage: /img/portfolio/pos-system.png
 updatedAt: 2021-08-22
 author: Bojack Horseman

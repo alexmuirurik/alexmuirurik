@@ -1,58 +1,28 @@
 ---
 title: YouTube Playlist Saver
 techStack: YouTube API, NextJS
-description: Ten years ago, tech pundits predicted the demise of PHP in web development. They claimed that the rise of modern frameworks, like Ruby on Rails and Node.js, would render the programming language obsolete. 
+description: YouTube is packed with amazing tutorials, tech talks, and courses — but it's easy to get lost in the noise. **YouTube Learn** solves this problem. 
 featuredImage: /img/portfolio/youtube-learn.png
 updatedAt: 2021-08-22
 author: Bojack Horseman
 ---
 
-# Welcome to your Expo app 👋
+YouTube is packed with amazing tutorials, tech talks, and courses — but it's easy to get lost in the noise. **YouTube Learn** solves this problem. It's a personalized learning platform built with **Next.js**, **YouTube Data API**, **MongoDB**, and **Prisma** — designed to help users **organize, and track educational YouTube videos.**
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+- Curate **learning playlists**
+- Categorize videos by **skills or topics**
+- Track **progress**
+- Save useful **timestamps or notes**
 
-## Get started
+It turns YouTube into a structured, distraction-free learning experience tailored to developers, students, or lifelong learners.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
-2. Start the app
+## Features
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **Search & Discover:** Find and preview YouTube videos using YouTube Data API 
+- **Organize by Projects:** Group videos into personal "learning projects" 
+- **Track Learning Progress:** Mark videos as "Watched", "In Progress", or "To Watch"
+- **Add Notes & Timestamps:** Write personal notes for each video, including timestamped references
+- **Save Playlists:** Save curated sets of videos with drag-and-drop ordering
+- **Clean Developer-Focused UI:** Built with Tailwind CSS and Radix UI components
