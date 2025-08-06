@@ -6,51 +6,61 @@ featuredImage: /img/portfolio/copyscribers.png
 updatedAt: 2021-08-22
 author: Bojack Horseman
 ---
+This project serves as the backend and admin interface for a content creation and article management platform designed specifically for writers. It's like Google Docs meets Google Drive, but tailored to help writers organize, write, and manage long-form content within structured projects.
 
-# Welcome to your Expo app 👋
+🔧 Tech Stack
+Framework: Next.js (App Router)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Auth: NextAuth.js with Prisma Adapter
 
-## Get started
+Database: Prisma ORM (likely PostgreSQL or SQLite)
 
-1. Install dependencies
-   ```bash
-   npm install
-   ```
-2. Start the app
-   ```bash
-   npx expo start
-   ```
+UI & Styling:
 
-In the output, you'll find options to open the app in a
+Tailwind CSS
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Radix UI components
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+ShadCN UI
 
-## Get a fresh project
+Lucide icons
 
-When you're ready, run:
+Forms & Validation:
 
-```bash
-npm run reset-project
-```
+React Hook Form
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Zod
 
-## Learn more
+Editor: TinyMCE (@tinymce/tinymce-react)
 
-To learn more about developing your project with Expo, look at the following resources:
+Other Tools:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+resend for email handling
 
-## Join the community
+@tanstack/react-table for complex data tables
 
-Join our community of developers creating universal apps.
+next-themes for dark/light mode
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+📁 Core Features (inferred)
+User Authentication & Sessions via NextAuth.js
+
+Project & Article Management - writers can create writing projects and manage articles within them
+
+Rich Text Editing using TinyMCE
+
+Team or Role-Based Views (possible with Radix UI menu structure)
+
+Notifications & UX Enhancements via toast, loaders, and top progress bars
+
+Dark/Light Theming
+
+💡 How it Supports Writers
+This app provides:
+
+A focused workspace to draft and organize articles
+
+A system to group writing into projects or folders
+
+Rich text capabilities without the complexity of WordPress or full CMSs
+
+Authentication and session management for personal or team-based writing

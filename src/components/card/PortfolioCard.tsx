@@ -1,4 +1,3 @@
-'use client'
 import { blurImageData, reduceWords } from '@/src/utils/string'
 import Link from 'next/link'
 import { Post } from '@/src/utils/types'
