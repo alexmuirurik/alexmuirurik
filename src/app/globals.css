@@ -71,6 +71,10 @@
         @apply overflow-hidden md:mx-0 mb-10 p-4 rounded-md dark:bg-black;
     }
 
+    section[aria-live="polite"]{
+        @apply bg-transparent absolute w-0 h-0 bottom-0;
+    }
+
     iframe,
     figure {
         @apply w-full h-auto rounded-md overflow-hidden aspect-video;

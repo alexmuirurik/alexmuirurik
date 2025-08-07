@@ -36,11 +36,10 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                     >
                         <Navbar />
                         {children}
-
+                        <Toaster richColors expand />
                         <Footer />
                     </main>
                 </SidebarContextProvider>
-                <Toaster richColors expand />
             </body>
         </html>
     )

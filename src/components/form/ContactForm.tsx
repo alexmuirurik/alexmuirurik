@@ -1,7 +1,8 @@
 'use client'
-import { FormEvent } from 'react'
-import { toast } from 'sonner'
+import { SendMail } from '@/src/action/sendMail'
 import { LoadingButton } from '../ui/loading-button'
+import { FormEvent, useState } from 'react'
+import { toast } from 'sonner'
 
 interface ContactForm {
     name: string
@@ -11,10 +12,25 @@ interface ContactForm {
 }
 
 const ContactForm = () => {
-    const handleSubmit = async (event: FormEvent) => {
+    const [loading, setLoading] = useState(false)
+    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault()
-        const data = event.target
-        console.log(data)
+        const target = event.target as HTMLFormElement
+        const data = new FormData(event.target as HTMLFormElement)
+        setLoading(true)
+        try {
+            const response = await SendMail(data)
+            toast.success('Email sent successfully!', {
+                description: response.message
+            })
+            target.reset() 
+            setLoading(false)
+        } catch (error: any) {
+            toast.error('Error Sending Email', {
+                description: error?.message || 'An unknown error occurred'
+            })
+            setLoading(false)
+        }        
     }
 
     return (
@@ -81,7 +97,7 @@ const ContactForm = () => {
                 <LoadingButton
                     type="submit"
                     className="bg-teal-600 hover:bg-teal-500 px-4 py-2 border border-teal-500 rounded-lg"
-                    loading={false}
+                    loading={loading}
                 >
                     Submit Email
                 </LoadingButton>
