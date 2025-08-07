@@ -21,16 +21,16 @@ const ContactForm = () => {
         try {
             const response = await SendMail(data)
             toast.success('Email sent successfully!', {
-                description: response.message
+                description: response.message,
             })
-            target.reset() 
+            target.reset()
             setLoading(false)
         } catch (error: any) {
             toast.error('Error Sending Email', {
-                description: error?.message || 'An unknown error occurred'
+                description: error?.message || 'An unknown error occurred',
             })
             setLoading(false)
-        }        
+        }
     }
 
     return (
@@ -87,10 +87,11 @@ const ContactForm = () => {
                 </label>
                 <textarea
                     id="content"
-                    className="border border-neutral-300 rounded-lg p-2 text-black w-full mt-2 !outline-1 !outline-offset-0"
+                    className="border border-neutral-300 rounded-lg p-2 text-black w-full mt-2 !outline-1 resize-y whitespace-pre !outline-offset-0"
                     name="content"
                     rows={3}
                     required
+                    placeholder="Type your message here"
                 ></textarea>
             </div>
             <div className="w-full flex-[0_0_auto] form-group text-end mb-4">

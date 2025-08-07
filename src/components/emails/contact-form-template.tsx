@@ -8,7 +8,7 @@ interface EmailTemplateProps {
 export function EmailTemplate({ firstName, content }: EmailTemplateProps) {
     return (
         <div>
-            <p>{content}</p>
+            <pre>{content}</pre>
         </div>
     )
 }

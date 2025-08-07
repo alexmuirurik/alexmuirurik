@@ -2,7 +2,6 @@
 import { Resend } from 'resend'
 import { EmailTemplate } from '../components/emails/contact-form-template'
 
-
 const resend = new Resend(process.env.RESEND_API_KEY)
 export const SendMail = async (formData: FormData) => {
     try {
@@ -33,7 +32,7 @@ export const SendMail = async (formData: FormData) => {
             subject: `${name} via ${process.env.WEBSITE_URL}`,
             react: EmailTemplate({
                 firstName: `${process.env.ADMIN_NAME}`,
-                content: content,
+                content: `${content}`,
             }),
         })
 
