@@ -1,9 +1,9 @@
 'use server'
 import { Resend } from 'resend'
 import { EmailTemplate } from '../components/emails/contact-form-template'
-import { ReactElement } from 'react'
-const resend = new Resend(process.env.RESEND_API_KEY)
 
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 export const SendMail = async (formData: FormData) => {
     try {
         const accessKey = formData.get('access_key') as string
@@ -26,15 +26,23 @@ export const SendMail = async (formData: FormData) => {
             })
         }
 
-        const { data } = await resend.emails.send({
-            from: `${name} <${email}>`,
-            to: ['content@alexmuiruri.com'],
-            subject: `Hello world from ${name}`,
+        const { data, error } = await resend.emails.send({
+            from: `${process.env.ADMIN_NAME} <${process.env.ADMIN_EMAIL}>`,
+            replyTo: email,
+            to: [`${process.env.ADMIN_EMAIL}`],
+            subject: `${name} via ${process.env.WEBSITE_URL}`,
             react: EmailTemplate({
-                firstName: 'Alex',
+                firstName: `${process.env.ADMIN_NAME}`,
                 content: content,
             }),
         })
+
+        if (error) {
+            return Promise.reject({
+                success: false,
+                message: error,
+            })
+        }
 
         return Promise.resolve({
             success: true,
