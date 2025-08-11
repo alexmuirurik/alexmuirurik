@@ -30,7 +30,7 @@ const Sidebar = () => {
                         <Link href="/">
                             <Image
                                 className="border-8 border-ghost-white dark:border-gun-metal rounded-full cursor-pointer"
-                                src="/img/home/alexmuiruri.jpg"
+                                src="/img/home/alexmuiruri.png"
                                 alt=""
                                 height={120}
                                 width={120}
