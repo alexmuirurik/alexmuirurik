@@ -3,14 +3,14 @@ import React, { useState } from 'react'
 
 const ImageToast = async ({
     image,
-    classList,
+    className,
 }: {
     image: any
-    classList?: string | undefined
+    className?: string | undefined
 }) => {
     return (
         <Image
-            className={'!relative aspect-video w-full ' + classList}
+            className={'!relative aspect-video w-full ' + className}
             src={image}
             alt="Shoes"
             fill

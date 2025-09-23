@@ -1,5 +1,4 @@
 'use client'
-import React from 'react'
 import { Pacifico } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -7,7 +6,9 @@ import { navbar } from './lists'
 import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 import { useSidebarContext } from '@/src/context/usesidebar'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaHackerNews, FaLinkedin } from 'react-icons/fa'
+import { SiHackernoon } from 'react-icons/si'
+import { siteMeta } from '@/src/lib/sitemeta'
 
 const pacifico = Pacifico({ subsets: ['cyrillic'], weight: ['400'] })
 const Sidebar = () => {
@@ -30,7 +31,7 @@ const Sidebar = () => {
                         <Link href="/">
                             <Image
                                 className="border-8 border-ghost-white dark:border-gun-metal rounded-full cursor-pointer"
-                                src="/img/home/alexmuiruri.jpg"
+                                src={siteMeta.profileImage}
                                 alt=""
                                 height={120}
                                 width={120}
@@ -49,25 +50,25 @@ const Sidebar = () => {
                         </h4>
                         <div className="social-links flex gap-3">
                             <Link
-                                href="https://www.linkedin.com/in/alex-muiruri-writer/"
+                                href={siteMeta.social.linkedin}
                                 target="_blank"
                                 className="inline-flex items-center justify-center bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs"
                             >
                                 <FaLinkedin />
                             </Link>
                             <Link
-                                href="https://github.com/alexmuirurik/alexmuirurik"
+                                href={siteMeta.social.github}
                                 target="_blank"
                                 className="inline-flex items-center justify-center bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs"
                             >
                                 <FaGithub />
                             </Link>
                             <Link
-                                href="https://x.com/kiruri_alex"
+                                href={siteMeta.social.hackerNoon}
                                 target="_blank"
                                 className="inline-flex items-center justify-center bg-ghost-white dark:bg-gun-metal rounded-full w-9 h-9 text-center p-2 text-xs"
                             >
-                                <FaTwitter />
+                                <SiHackernoon />
                             </Link>
                         </div>
                     </div>
