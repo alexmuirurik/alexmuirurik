@@ -10,9 +10,9 @@ const PortfolioCard = async ({ portfolio }: { portfolio: Post[] }) => {
             key={portfolio.slug}
         >
             <div className="border dark:border-gray-700 rounded-md shadow-xl overflow-hidden w-full">
-                <figure className="max-w-full">
+                <figure className="max-w-full border-b dark:border-gray-700 rounded-lg overflow-hidden">
                     <Image
-                        className={'!relative aspect-video w-full '}
+                        className={'!relative aspect-video w-full rounded-xl p-2 '}
                         src={portfolio.metaData.featuredImage ?? ''}
                         blurDataURL={blurImageData}
                         height={250}
