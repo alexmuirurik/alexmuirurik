@@ -1,6 +1,6 @@
 import { getPageContent } from '@/src/utils/posts'
-import Projects from './projects'
 import ReactMarkDown from 'react-markdown'
+import Articles from './articles'
 
 const About = () => {
     const aboutMe = getPageContent('about')
@@ -19,7 +19,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <Projects />
+                    <Articles />
                 </div>
             </div>
         </section>

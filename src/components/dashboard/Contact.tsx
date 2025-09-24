@@ -1,5 +1,5 @@
 import { siteMeta } from '@/src/lib/sitemeta'
-import Articles from './articles'
+import Projects from './projects'
 
 const Contact = () => {
     return (
@@ -45,7 +45,7 @@ const Contact = () => {
                             ))}
                         </div>
                     </div>
-                    <Articles />
+                    <Projects />
                 </div>
             </div>
         </section>
