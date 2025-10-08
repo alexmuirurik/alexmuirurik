@@ -27,7 +27,7 @@ const Sidebar = () => {
         >
             <div className="sidebar bg-platinum-light dark:bg-rich-black rounded-md w-44 py-0 h-svh z-50">
                 <div className="sidebar-header">
-                    <div className="sidebar-header flex flex-col content-center items-center">
+                    <div className="sidebar-header flex flex-col content-center items-center mb-4 space-y-3">
                         <Link href="/">
                             <Image
                                 className="border-8 border-ghost-white dark:border-gun-metal rounded-full cursor-pointer"
@@ -46,7 +46,7 @@ const Sidebar = () => {
                             <Link href="/">Alex Muiruri</Link>
                         </h1>
                         <h4 className="text-[cadetblue] text-xs font-bold cursor-pointer border-b-0">
-                            <Link href="/">Full-Stack Developer</Link>
+                            <Link href="/">Tech Writer | Developer</Link>
                         </h4>
                         <div className="social-links flex gap-3">
                             <Link

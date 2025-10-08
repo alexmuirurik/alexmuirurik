@@ -6,19 +6,14 @@ import ThemeMode from './ThemeMode'
 import ToastStart from '../toast/ToastStart'
 import SidebarMini from './SidebarMini'
 import { toast } from 'sonner'
+import { Music } from 'lucide-react'
 
 const Navbar = () => {
     return (
         <nav className="sticky w-full top-0 bg-platinum-light dark:bg-rich-black z-30 lg:z-50">
             <div className="flex items-center justify-between gap-6 px-2">
                 <div className="header-img">
-                    <Image
-                        className="mt-2"
-                        src="/img/home/hhjf.webp"
-                        width={40}
-                        height={40}
-                        alt=""
-                    />
+                    <Music className="text-4xl" />
                 </div>
                 <div className="nav-items overflow-hidden hidden sm:block">
                     <ul className="flex gap-4">

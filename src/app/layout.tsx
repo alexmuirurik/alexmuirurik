@@ -34,7 +34,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                         id="main"
                         className="main relative w-full lg:w-[calc(100%_-_13rem)] px-2 lg:left-48 bottom-0"
                     >
-                        <Navbar />
+                        {/* <Navbar /> */}
                         {children}
                         <Toaster richColors expand />
                         <Footer />
