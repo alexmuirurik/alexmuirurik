@@ -1,20 +1,15 @@
 import React from 'react'
+import SidebarMini from './SidebarMini'
 
 const PageHero = ({ pagename }: any) => {
     return (
-        <section className="hero p-0 h-28 mb-3" id="hero">
-            <div className="h-full px-0">
-                <div
-                    className="bg-fixed bg-cover flex justify-center items-center mix-blend-exclusion dark:mix-blend-normal h-full"
-                    style={{ backgroundImage: "url('/img/home/bg-hero.jpg')" }}
-                >
-                    <div className="aside text-center m-auto">
-                        <h1 className="text-4xl font-bold border-b-0">
-                            {pagename}
-                        </h1>
-                        <p></p>
-                    </div>
-                </div>
+        <section
+            className="bg-fixed bg-cover flex justify-center items-center mix-blend-exclusion dark:mix-blend-normal h-full p-8"
+            style={{ backgroundImage: "url('/img/home/bg-hero.jpg')" }}
+        >
+            <div className="flex lg:block justify-between items-center w-full lg:w-auto">
+                <h1 className="text-4xl lg:text-center font-bold border-b-0 m-0">{pagename}</h1>
+                <SidebarMini />
             </div>
         </section>
     )

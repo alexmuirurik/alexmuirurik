@@ -27,9 +27,9 @@ const SidebarMini = () => {
             onClick={() => setHidden(!hidden)}
         >
             {hidden ? (
-                <FaOutdent className="text-xl h-6 w-6" />
+                <FaOutdent className="text-xl h-8 w-8" />
             ) : (
-                <FaIndent className="text-xl h-6 w-6" />
+                <FaIndent className="text-xl h-8 w-8" />
             )}
         </Link>
     )
