@@ -83,7 +83,7 @@ export const siteMeta = {
         'WordPress Development',
     ],
     heroImage: '/img/home/bg-hero.jpg',
-    profileImage: '/img/home/alexmuiruri.jpg',
+    profileImage: '/img/home/logo.jpg',
     social: {
         github: 'https://github.com/alexmuirurik',
         hackerNoon: 'https://hackernoon.com/u/alexmuirurik',

@@ -14,7 +14,7 @@ const SinglePortfolioCard = ({ portfolio }: { portfolio: Post }) => {
                 </h2>
                 <div className="flex items-center gap-2 pt-2 pb-4">
                     <Avatar className="h-6 w-6">
-                        <AvatarImage src="/img/home/alexmuiruri.jpg" />
+                        <AvatarImage src="/img/home/logo.jpg" />
                     </Avatar>
                     <div className="flex items-center gap-1">
                         <span className="text-sm text-neutral-400">by</span>
