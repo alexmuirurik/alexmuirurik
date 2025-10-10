@@ -14,18 +14,19 @@ export const metadata: Metadata = {
     title: 'My Resume | Alex Muiruri - https://alexmuiruri.com',
     description:
         'Full-stack Web Developer | Javascript, React, NodeJS | Python, Django | PHP, Laravel| HTML | CSS ',
+    icons: [
+        {
+            rel: 'icon',
+            href: '/img/home/favicon.png',
+            type: 'image/png',
+            url: '/img/home/favicon.png'
+        }
+    ]
 }
 
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
     return (
         <html lang="en" data-theme="dark">
-            <head>
-                <link
-                    rel="shortcut icon"
-                    href="/img/home//hhjf.webp"
-                    type="image/x-icon"
-                />
-            </head>
             <body className={nunito.className}>
                 <NextTopLoader height={1} />
                 <SidebarContextProvider>
