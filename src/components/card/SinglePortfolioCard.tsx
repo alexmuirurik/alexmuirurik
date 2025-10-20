@@ -18,7 +18,9 @@ const SinglePortfolioCard = ({ portfolio }: { portfolio: Post }) => {
                     </Avatar>
                     <div className="flex items-center gap-1">
                         <span className="text-sm text-neutral-400">by</span>
-                        <span className="text-sm font-bold text-neutral-400">Alex Muiruri</span>
+                        <span className="text-sm font-bold text-neutral-400">
+                            Alex Muiruri
+                        </span>
                     </div>
                     <div className="flex items-center gap-2 ms-2">
                         <FaEye className="text-sm" />
@@ -36,7 +38,9 @@ const SinglePortfolioCard = ({ portfolio }: { portfolio: Post }) => {
                         width={700}
                     />
                 </div>
-                <ReactMarkDown>{portfolio.content}</ReactMarkDown>
+                <div className="pe-6">
+                    <ReactMarkDown>{portfolio.content}</ReactMarkDown>
+                </div>
             </div>
         </div>
     )

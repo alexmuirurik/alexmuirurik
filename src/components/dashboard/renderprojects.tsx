@@ -5,7 +5,7 @@ import Link from 'next/link'
 export const RenderProjects = () => {
     return (
         <ul className="list-decimal">
-            {siteMeta.projects.slice(0, 6).map((portfolio) => {
+            {siteMeta.projects.slice(0, 5).map((portfolio) => {
                 return (
                     <li
                         className="flex gap-2 border-t dark:border-gray-700 py-3"

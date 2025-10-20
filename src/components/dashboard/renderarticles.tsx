@@ -7,7 +7,7 @@ export const RenderArticles = () => {
     const portfolio: Post[] = getPosts('portfolio')
     return (
         <ul className="list-decimal">
-            {portfolio.slice(0, 6).map((portfolio) => {
+            {portfolio.slice(0, 5).map((portfolio) => {
                 return (
                     <li
                         className="flex gap-2 border-t dark:border-gray-700 py-3"
@@ -20,10 +20,7 @@ export const RenderArticles = () => {
                             <Edit className="text-sm text-teal-600" size={16} />
                             <span className="">
                                 <span>
-                                    {portfolio.metaData.description.substring(
-                                        0,
-                                        30
-                                    )}
+                                    {portfolio.metaData.title.substring(0, 30)}
                                 </span>
                             </span>
                         </Link>

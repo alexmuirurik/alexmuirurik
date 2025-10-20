@@ -14,16 +14,23 @@ const readMDXFile = (filePath: fs.PathOrFileDescriptor) => {
 
 const getMDXData = (dir: any) => {
     let mdxFiles = getMDXFiles(dir)
-    return mdxFiles.map((file) => {
-        let { data, content } = readMDXFile(path.join(dir, file))
-        let slug = path.basename(file, path.extname(file))
+    return mdxFiles
+        .map((file) => {
+            let { data, content } = readMDXFile(path.join(dir, file))
+            let slug = path.basename(file, path.extname(file))
 
-        return {
-            metaData: data as MetaData,
-            slug: slug,
-            content: content,
-        }
-    })
+            return {
+                metaData: data as MetaData,
+                slug: slug,
+                content: content,
+            }
+        })
+        .sort((a, b) => {
+            return (
+                new Date(b.metaData.updatedAt).getTime() -
+                new Date(a.metaData.updatedAt).getTime()
+            )
+        })
 }
 
 export const getPageContent = (page: string) => {

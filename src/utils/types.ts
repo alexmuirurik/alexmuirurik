@@ -4,7 +4,7 @@ export interface MetaData {
     techStack: string
     featuredImage?: string
     author?: string
-    updatedAt?: string
+    updatedAt: string
     createdAt?: string
 }
 

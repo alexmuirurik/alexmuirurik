@@ -5,7 +5,7 @@ import PageHero from "../components/template/PageHero";
 const Home = () => {
     return (
         <div className="home-wapper">
-            <PageHero  pagename="My Resume" />
+            <PageHero  pagename="About Me" />
             <About />
             <Contact />
         </div>
