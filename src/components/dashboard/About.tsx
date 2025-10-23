@@ -14,7 +14,7 @@ const About = () => {
                     <div className="bg-ghost-white dark:bg-card-dark w-full md:w-8/12 lg:w-9/12 rounded-md p-6 mb-4 md:mb-0">
                         <h2 className="card-title">About Me</h2>
                         <div className="card">
-                            <div className="card-body markdown-content">
+                            <div className="card-body markdown-content text-gray-300">
                                 <ReactMarkDown>{aboutMe}</ReactMarkDown>
                             </div>
                         </div>

@@ -6,6 +6,6 @@ interface navbar {
 export const navbar : navbar[] = [
     {title : 'About Me',   url : '/'},
     {title : 'Portfolio',   url : '/portfolio'}, 
-    {title : 'Hire Me',     url : '/about'},
+    {title : 'Services',   url : '/services'},
     {title : 'Contact Me',  url : '/contact'}
 ]

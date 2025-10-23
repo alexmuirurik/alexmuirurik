@@ -12,7 +12,9 @@ const PortfolioCard = async ({ portfolio }: { portfolio: Post[] }) => {
             <div className="border dark:border-gray-700 rounded-md shadow-xl overflow-hidden w-full">
                 <figure className="max-w-full border-b dark:border-gray-700 rounded-lg overflow-hidden">
                     <Image
-                        className={'!relative aspect-video w-full rounded-xl p-2 '}
+                        className={
+                            '!relative aspect-video w-full rounded-xl p-2 '
+                        }
                         src={portfolio.metaData.featuredImage ?? ''}
                         blurDataURL={blurImageData}
                         height={250}
@@ -21,10 +23,7 @@ const PortfolioCard = async ({ portfolio }: { portfolio: Post[] }) => {
                     />
                 </figure>
                 <div className="bg-ghost-white dark:bg-card-dark p-3 space-y-2">
-                    <Link
-                        className="text-neutral-300"
-                        href={'/portfolio/' + portfolio.slug}
-                    >
+                    <Link href={'/portfolio/' + portfolio.slug}>
                         {reduceWords(portfolio.metaData.title, 34)}
                     </Link>
                     <p className="text-sm text-gray-400">

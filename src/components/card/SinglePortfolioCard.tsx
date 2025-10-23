@@ -38,7 +38,7 @@ const SinglePortfolioCard = ({ portfolio }: { portfolio: Post }) => {
                         width={700}
                     />
                 </div>
-                <div className="pe-6">
+                <div className="pe-6 text-gray-200">
                     <ReactMarkDown>{portfolio.content}</ReactMarkDown>
                 </div>
             </div>
