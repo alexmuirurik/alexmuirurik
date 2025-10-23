@@ -31,7 +31,7 @@ export const services: Service[] = [
     {
         name: 'System Maintenance',
         icon: GrSystem,
-        description: "Write technical documentation using Markdown, GitHub, and GitHub Actions.",
+        description: "Maintain and optimize the performance of your databases and applications.",
     },
     {
         name: 'Freelance Tech Writing',
