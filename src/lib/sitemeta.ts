@@ -23,6 +23,7 @@ export const siteMeta = {
         {
             employer: 'Stickyeyes',
             jobTitle: 'Freelance Writer',
+            image: '/img/posts/stickyeyes.png',
             description: [
                 `I write interesting guides on how to play, win, and strategize casino gameplays.`,
                 `Interesting topics I've worked on include 'Getting The Best Out of an Online Bingo Site', 'How To Enjoy a Night of Playing Bingo', etc.`,
@@ -33,6 +34,7 @@ export const siteMeta = {
         {
             employer: 'QuartzByte',
             jobTitle: 'Mobile App Developer',
+            image: '/img/posts/quartzbyte.png',
             description: [
                 `Designed application UI using React Native and Figma documentation.`,
                 `Researched new fields to find alternative ways of doing things.`,
@@ -44,6 +46,7 @@ export const siteMeta = {
         {
             employer: 'NetraScale',
             jobTitle: 'Javascript Developer',
+            image: '/img/posts/netrascale.jpg',
             description: [
                 `I created a full-stack web application using React/NextJS, PostgreSQL, and ShadCN.`,
                 `Worked on APIs to support mobile payments etc...`,
