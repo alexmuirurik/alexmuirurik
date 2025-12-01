@@ -72,10 +72,6 @@ export const siteMeta = {
             name: 'Inventory NestJs Backend',
             link: 'https://github.com/alexmuirurik/inventory-web-app',
         },
-        {
-            name: 'Movie Trailer React App',
-            link: 'https://github.com/alexmuirurik/themoviedb',
-        },
     ],
     services: [
         'Full-stack Web Development',
