@@ -4,7 +4,7 @@ import PageHero from '@/src/components/template/PageHero'
 const page = () => {
 	return (
 		<div className='main-wrapper min-h-svh'>
-			<PageHero pagename='Contact Me' />
+			<PageHero pagename='Contact' />
 			<section id="portfolio-details " className="portfolio-details bg-white dark:bg-black">
 				<div className="container-fluid">
 					<div className="card bg-ghost-white dark:bg-card-dark">

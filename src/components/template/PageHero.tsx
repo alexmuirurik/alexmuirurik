@@ -4,7 +4,7 @@ import SidebarMini from './SidebarMini'
 const PageHero = ({ pagename }: any) => {
     return (
         <section
-            className="bg-fixed bg-cover flex justify-center items-center mix-blend-exclusion dark:mix-blend-normal h-full p-8"
+            className="bg-fixed bg-cover flex items-center mix-blend-exclusion dark:mix-blend-normal h-full p-8"
             style={{ backgroundImage: "url('/img/home/bg-hero.jpg')" }}
         >
             <div className="flex lg:block justify-between items-center w-full lg:w-auto">
