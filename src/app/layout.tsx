@@ -7,6 +7,7 @@ import Sidebar from '@/src/components/template/Sidebar'
 import { SidebarContextProvider } from '@/src/context/usesidebar'
 import './globals.css'
 import { Toaster } from '../components/ui/sonner'
+import { siteMeta } from '../lib/sitemeta'
 
 const nunito = Nunito({ subsets: ['cyrillic'] })
 
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
             rel: 'icon',
             href: '/img/home/favicon.png',
             type: 'image/png',
-            url: '/img/home/favicon.png'
-        }
-    ]
+            url: '/img/home/favicon.png',
+        },
+    ],
 }
 
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
@@ -34,6 +35,12 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                     <main
                         id="main"
                         className="main relative w-full lg:w-[calc(100%_-_13rem)] px-2 lg:left-48 bottom-0"
+                        style={{
+                            background: `url(bg.svg)`,
+                            backgroundAttachment: `fixed`,
+                            backgroundSize: `cover`,
+                            backgroundPosition: `center`,
+                        }}
                     >
                         {/* <Navbar /> */}
                         {children}
