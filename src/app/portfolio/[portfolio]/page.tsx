@@ -3,7 +3,7 @@ import SinglePortfolioCard from '@/src/components/card/SinglePortfolioCard'
 import { getPosts } from '@/src/utils/posts'
 import { notFound } from 'next/navigation'
 
-const PortfolioPage = async ({ params }: { params: Promise{ portfolio: string } }) => {
+const PortfolioPage = async ({ params }: { params: Promise<{ portfolio: string }> }) => {
     const portfolio = getPosts('portfolio')
     const portfolioId = await params.portfolio
     const singlePortfolio = portfolio.find(
