@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation'
 
 const PortfolioPage = async ({ params }: { params: Promise<{ portfolio: string }> }) => {
     const portfolio = getPosts('portfolio')
-    const portfolioId = await params.portfolio
+    const portfolioId = (await params).portfolio
     const singlePortfolio = portfolio.find(
         (portfolio) => portfolio.slug === portfolioId
     )
