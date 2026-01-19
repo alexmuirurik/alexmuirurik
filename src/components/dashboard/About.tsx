@@ -18,16 +18,16 @@ const About = () => {
                         <div className="card">
                             <div className="card-body markdown-content text-gray-300">
                                 <ReactMarkDown>{aboutMe}</ReactMarkDown>
-                                <div className="flex items-center gap-16 mt-6">
+                                <div className="md:flex items-center gap-16 mt-6 space-y-2 md:space-y-0">
                                     <Link
                                         href="/contact"
-                                        className="bg-teal-700 hover:bg-teal-600 rounded-lg px-12 py-3"
+                                        className="flex bg-teal-700 hover:bg-teal-600 items-center justify-center rounded-lg px-12 py-3 w-full md:w-auto"
                                     >
                                         <span className='text-neutral-100'>Contact Me</span>
                                     </Link>
                                     <Link
                                         href="/assets/doc/Resume-Alex-Muiruri.pdf"
-                                        className="bg-sky-900 hover:bg-sky-800 rounded-lg px-12 py-3"
+                                        className="flex bg-sky-900 hover:bg-sky-800 items-center justify-center rounded-lg px-12 py-3 w-full md:w-auto"
                                         target='_blank'
                                     >
                                         <span className='text-neutral-100'>My Resume</span>
