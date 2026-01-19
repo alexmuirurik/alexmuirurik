@@ -1,13 +1,8 @@
 
-I'm Alex Muiruri, a software developer with 3 years of experience in web and mobile development. I primarily work with TypeScript, but I'm always eager to improve my skills and learn new technologies.
+I'm a software developer with 3 years of experience in web and mobile development. I primarily work with TypeScript and Python, but I'm also proficient in JavaScript, Java, React, NodeJS, and PHP.
 
-I'm passionate about building high-quality and scalable software solutions, and I'm open to contributing to open-source projects and the community whenever possible.
+I'm passionate about building high-quality and scalable software solutions. In my free time, I enjoy reading and writing about new technologies. 
 
-In my free time, I enjoy reading and writing about new technologies. If you're interested in my work, please feel free to reach out. 
+I'm open to contributing to open-source projects and the community whenever possible. I believe in collaboration and the power of teamwork. 
 
-Let's talk: [📩](mailto:content@alexmuiruri.com)
-
-If you're just exploring, check out my latest projects and share your thoughts — I'd love to hear your ideas.
-
-Kind regards,\
-Alex
+If you're interested in my work, please feel free to reach out to me. 

@@ -35,12 +35,6 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
                     <main
                         id="main"
                         className="main relative w-full lg:w-[calc(100%_-_13rem)] px-2 lg:left-48 bottom-0"
-                        style={{
-                            background: `url(bg.svg)`,
-                            backgroundAttachment: `fixed`,
-                            backgroundSize: `cover`,
-                            backgroundPosition: `center`,
-                        }}
                     >
                         {/* <Navbar /> */}
                         {children}

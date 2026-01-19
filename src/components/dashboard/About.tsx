@@ -1,9 +1,11 @@
 import { getPageContent } from '@/src/utils/posts'
 import ReactMarkDown from 'react-markdown'
 import Articles from './articles'
+import Link from 'next/link'
 
 const About = () => {
     const aboutMe = getPageContent('about')
+    
     return (
         <section
             className="about mt-4 rounded-md dark:bg-black bg-white"
@@ -16,6 +18,21 @@ const About = () => {
                         <div className="card">
                             <div className="card-body markdown-content text-gray-300">
                                 <ReactMarkDown>{aboutMe}</ReactMarkDown>
+                                <div className="flex items-center gap-16 mt-6">
+                                    <Link
+                                        href="/contact"
+                                        className="bg-teal-700 hover:bg-teal-600 rounded-lg px-12 py-3"
+                                    >
+                                        <span className='text-neutral-100'>Contact Me</span>
+                                    </Link>
+                                    <Link
+                                        href="/assets/doc/Resume-Alex-Muiruri.pdf"
+                                        className="bg-sky-900 hover:bg-sky-800 rounded-lg px-12 py-3"
+                                        target='_blank'
+                                    >
+                                        <span className='text-neutral-100'>My Resume</span>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>

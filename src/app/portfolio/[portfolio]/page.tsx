@@ -3,11 +3,14 @@ import SinglePortfolioCard from '@/src/components/card/SinglePortfolioCard'
 import { getPosts } from '@/src/utils/posts'
 import { notFound } from 'next/navigation'
 
-const PortfolioPage = async ({ params }: { params: { portfolio: string } }) => {
-    const portfolio = getPosts('portfolio')
-    const singlePortfolio = portfolio.find(
-        (portfolio) => portfolio.slug === params.portfolio
-    )
+const PortfolioPage = async ({
+    params,
+}: {
+    params: Promise<{ portfolio: string }>
+}) => {
+    const portfoli = getPosts('portfolio')
+    const { portfolio } = await params
+    const singlePortfolio = portfoli.find((p) => p.slug === portfolio)
     if (!singlePortfolio) return notFound()
 
     return (
@@ -17,7 +20,7 @@ const PortfolioPage = async ({ params }: { params: { portfolio: string } }) => {
                     <SinglePortfolioCard portfolio={singlePortfolio} />
                 </div>
                 <div className="md:w-3/12 md:pe-0">
-                    <PortfolioCard portfolio={portfolio} />
+                    <PortfolioCard portfolio={portfoli} />
                 </div>
             </div>
         </div>
