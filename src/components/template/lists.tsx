@@ -5,7 +5,7 @@ interface navbar {
 
 export const navbar : navbar[] = [
     {title : 'About Me',   url : '/'},
-    {title : 'Portfolio',   url : '/portfolio'}, 
+    {title : 'Posts',   url : '/portfolio'},
     {title : 'Services',   url : '/services'},
     {title : 'Contact Me',  url : '/contact'}
 ]

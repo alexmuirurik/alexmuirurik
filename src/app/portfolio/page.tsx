@@ -16,7 +16,7 @@ const page = async ({
     
     return (
         <div className="main-wrapper min-h-svh">
-            <PageHero pagename="Portfolio" />
+            <PageHero pagename="Posts" />
             <section className="dportfolio py-2 px-0 bg-transparent rounded-3">
                 <div className="container-fluid md:p-0">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 m-auto">
