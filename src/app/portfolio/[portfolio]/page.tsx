@@ -11,6 +11,9 @@ const PortfolioPage = async ({
     const portfoli = getPosts('portfolio')
     const { portfolio } = await params
     const singlePortfolio = portfoli.find((p) => p.slug === portfolio)
+    const newPortfoli = portfoli
+        .filter((p) => p.slug !== portfolio)
+        .slice(0, 12)
     if (!singlePortfolio) return notFound()
 
     return (
@@ -20,7 +23,7 @@ const PortfolioPage = async ({
                     <SinglePortfolioCard portfolio={singlePortfolio} />
                 </div>
                 <div className="md:w-3/12 md:pe-0">
-                    <PortfolioCard portfolio={portfoli} />
+                    <PortfolioCard portfolio={newPortfoli} />
                 </div>
             </div>
         </div>
