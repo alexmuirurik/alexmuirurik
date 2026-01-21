@@ -23,7 +23,7 @@ const PortfolioCard = async ({ portfolio }: { portfolio: Post[] }) => {
                     />
                 </figure>
                 <div className="bg-ghost-white dark:bg-card-dark p-3 space-y-2">
-                    <Link href={'/portfolio/' + portfolio.slug}>
+                    <Link href={'/posts/' + portfolio.slug}>
                         {reduceWords(portfolio.metaData.title, 34)}
                     </Link>
                     <p className="text-sm text-gray-400">
