@@ -8,7 +8,9 @@ const PageHero = ({ pagename }: any) => {
             style={{ backgroundImage: "url('/img/home/bg-hero.jpg')" }}
         >
             <div className="flex lg:block justify-between items-center w-full lg:w-auto">
-                <h1 className="text-4xl lg:text-center font-bold border-b-0 m-0">{pagename}</h1>
+                <h1 className="text-4xl text-gray-300 lg:text-center font-bold border-b-0 m-0">
+                    {pagename}
+                </h1>
                 <SidebarMini />
             </div>
         </section>
