@@ -15,7 +15,7 @@ export const RenderArticles = () => {
                     >
                         <Link
                             className="flex gap-2 items-center text-sm text-gray-300 font-bold mb-1"
-                            href={'/portfolio/' + portfolio.slug}
+                            href={'/posts/' + portfolio.slug}
                         >
                             <Edit className="text-sm text-teal-600" size={16} />
                             <span className="">
