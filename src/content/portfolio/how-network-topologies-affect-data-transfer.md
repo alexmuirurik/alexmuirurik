@@ -34,6 +34,8 @@ They can be partially or fully mesh. In a partial mesh, nodes communicate with n
 
 ## Ring Topology
 
+![Ring Topology](/img/portfolio/ring-topology.jpg)
+
 A ring topology is a network layout where each device on a network is connected to exactly two other nodes, creating a closed loop for data to travel. Data travels from node to node, passing through each device before reaching its destination. 
 
 Most ring topologies are also called one-way unidirectional ring networks, since data travels in only one direction. However, each device gets an equal chance to transmit and receive data through tokens. 
@@ -94,6 +96,8 @@ The main cable ends are fitted with terminators to absorb signals and prevent bo
 - The topology can lead to data collision if nodes try to send data simultaneously. 
 
 ## Hybrid Topology
+
+![Hybrid Topology](/img/portfolio/network-topologies.jpg)
 
 A hybrid topology combines two or more topologies, such as star, ring, and bus. It leverages the strengths of each topology, creating a more scalable, reliable, and flexible network than a single topology can offer. 
 

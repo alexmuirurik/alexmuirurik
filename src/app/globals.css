@@ -159,6 +159,6 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        @apply bg-neutral-400 dark:bg-gray-600 rounded-md;
+        @apply bg-neutral-400 dark:bg-rich-black rounded-sm;
     }
 }

@@ -1,8 +1,9 @@
 export interface MetaData {
     title: string
     description: string
-    techStack: string
+    techStack?: string
     featuredImage?: string
+    linkRel?: string
     author?: string
     updatedAt: string
     createdAt?: string
