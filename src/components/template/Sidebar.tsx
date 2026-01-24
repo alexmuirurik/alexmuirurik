@@ -1,21 +1,28 @@
 'use client'
+
 import { Pacifico } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
-import { navbar } from './lists'
+import { navbarList } from './lists'
 import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 import { useSidebarContext } from '@/src/context/usesidebar'
-import { FaGithub, FaHackerNews, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiHackernoon } from 'react-icons/si'
 import { siteMeta } from '@/src/lib/sitemeta'
 
 const pacifico = Pacifico({ subsets: ['cyrillic'], weight: ['400'] })
 const Sidebar = () => {
     const { hidden } = useSidebarContext()
-    const navigate = useRouter()
     const pathname = usePathname()
-    const isActive = (href: string) => pathname === href
+    const isActive = (href: string) => {
+        const path = pathname.split('/')
+        const hrefPath = href.split('/')
+        const hrefFirst = hrefPath[1]
+        const first = path[1]
+        console.log(hrefFirst, first)
+        return hrefFirst === first
+    }
     const show = hidden ? 'hidden w-0' : 'w-48'
     return (
         <aside
@@ -74,7 +81,7 @@ const Sidebar = () => {
                     </div>
                     <div className="sidebar-body mt-2">
                         <ul className="menu">
-                            {navbar.map((nav, i) => {
+                            {navbarList.map((nav, i) => {
                                 const active = isActive(nav.url) ? 'active' : ''
                                 return (
                                     <li key={i}>

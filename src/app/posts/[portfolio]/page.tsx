@@ -1,5 +1,6 @@
 import PortfolioCard from '@/src/components/card/PortfolioCard'
 import SinglePortfolioCard from '@/src/components/card/SinglePortfolioCard'
+import PageHero from '@/src/components/template/PageHero'
 import { getPosts } from '@/src/utils/posts'
 import { notFound } from 'next/navigation'
 
@@ -18,6 +19,7 @@ const PortfolioPage = async ({
 
     return (
         <div className="main-wrapper container-fluid min-h-svh">
+            <PageHero pagename="Post" />
             <div className="md:flex gap-4 mt-4">
                 <div className="md:w-9/12 ps-0 mb-4">
                     <SinglePortfolioCard portfolio={singlePortfolio} />

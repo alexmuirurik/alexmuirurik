@@ -3,7 +3,7 @@ interface navbar {
     url: string
 }
 
-export const navbar : navbar[] = [
+export const navbarList : navbar[] = [
     {title : 'About Me',   url : '/'},
     {title : 'Posts',   url : '/posts'},
     {title : 'Services',   url : '/services'},
