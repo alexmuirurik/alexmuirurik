@@ -21,7 +21,7 @@ export const siteMeta = {
     skills: 'Documentation Writing, React Native, NextJs, NestJs, NuxtJs, Laravel, MySQL, PostgreSQL, MongoDB, APIs, and OAuth',
     recentWork: [
         {
-            employer: 'Writer Workflow',
+            name: 'Writer Workflow',
             jobTitle: 'Next.js, PostgreSQL',
             link: 'https://github.com/alexmuirurik/cms-web-app',
             image: '/img/portfolio/copyscribers.png',
@@ -33,7 +33,7 @@ export const siteMeta = {
             end: 'Present',
         },
         {
-            employer: 'Inventory App',
+            name: 'Inventory App',
             jobTitle: 'Next.js, MongoDB, Prisma',
             link: 'https://github.com/alexmuirurik/inventory-backend-api',
             image: '/img/portfolio/pos-system.png',
@@ -45,7 +45,7 @@ export const siteMeta = {
             end: 'July 2025',
         },
         {
-            employer: 'Inventory Backend',
+            name: 'Inventory Backend',
             jobTitle: 'Nest.js, MongoDB, Prisma',
             link: 'https://github.com/alexmuirurik/inventory-backend-api',
             image: '/img/portfolio/backend.png',
@@ -55,24 +55,6 @@ export const siteMeta = {
             ],
             start: 'Sep 2023',
             end: 'Dec 2024',
-        },
-    ],
-    projects: [
-        {
-            name: 'Writer NextJs Frontend',
-            link: 'https://github.com/alexmuirurik/cms-web-app',
-        },
-        {
-            name: 'Inventory React Native',
-            link: 'https://github.com/alexmuirurik/inventory-mobile-app',
-        },
-        {
-            name: 'Inventory NextJs Frontend',
-            link: 'https://github.com/alexmuirurik/inventory-backend-api',
-        },
-        {
-            name: 'Inventory NestJs Backend',
-            link: 'https://github.com/alexmuirurik/inventory-web-app',
         },
     ],
     services: [
