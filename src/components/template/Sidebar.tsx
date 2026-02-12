@@ -53,7 +53,7 @@ const Sidebar = () => {
                             <Link href="/">Alex Muiruri</Link>
                         </h1>
                         <h4 className="text-[cadetblue] text-xs font-bold cursor-pointer border-b-0">
-                            <Link href="/">Tech Writer | Developer</Link>
+                            <Link href="/">Full Stack Developer</Link>
                         </h4>
                         <div className="social-links flex gap-3">
                             <Link
